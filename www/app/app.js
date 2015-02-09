@@ -10,13 +10,17 @@
         console.log('config');
 
         //
-        // For any unmatched url, redirect to /console-list
+        // For any unmatched url, redirect to home
         $urlRouterProvider.otherwise("/map-list");
         //
         // Now set up the states
-        $stateProvider.state('map-list', {
+        $stateProvider.state('Maps', {
             url: "/map-list",
             templateUrl: "app/Map-list/map-list.html"
+        });
+        $stateProvider.state('menus', {
+            url: "/menu-list",
+            templateUrl: "app/menu-list/menu-list.html"
         });
 
     }

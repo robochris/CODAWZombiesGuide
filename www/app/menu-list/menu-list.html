@@ -1,0 +1,8 @@
+
+<div ng-controller="MenuListController as menuList">
+    <div ng-repeat="menu in menuList.menus" class="menu" ui-sref="Maps({mapId: map.mapId})">
+        <div class="description">
+            <div class="name">{{menu.displayName}}</div>
+        </div>
+    </div>
+</div>

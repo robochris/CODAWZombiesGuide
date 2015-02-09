@@ -1,0 +1,10 @@
+<div ng-controller="MapListController as mapList">
+    <div ng-repeat="map in mapList.maps" class="map" ui-sref="menus({menuId: menu.mapId})">
+        <div class="description">
+            <div class="name">{{map.displayName}}</div>
+        </div>
+        <div class="mapimage">
+            <img ng-src="{{map.imageUrl}}" />
+        </div>
+    </div>
+</div>
