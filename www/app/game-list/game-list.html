@@ -1,0 +1,20 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="stylexbox360.css">
+<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
+<div ng-controller="GameListController as gameList">
+    <div class='Games'>
+        <ul>
+            <li ng-repeat="game in gameList.Games" class="{{game.key}}"><a ui-sref="Achievement-list({gameKey: game.key})">{{game.displayName}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="toolbar">
+    <div class="backHome">
+        <a href="http://localhost:8080/#/console-list"> <i class="fa fa-arrow-left"></i>
+        </a>
+    </div>
+    <div class="title">
+        <h1>Xbox 360</h1>
+    </div>
+</div>
