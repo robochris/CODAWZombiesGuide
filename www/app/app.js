@@ -23,6 +23,10 @@
             templateUrl: "app/menu-list/menu-list.html"
         });
 
+        $stateProvider.state('map', {
+            url: "/map",
+            templateUrl: "app/map/map.html"
+        });
     }
 
     function Run() {
