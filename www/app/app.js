@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    window.agApp = angular.module('agApp', ['ui.router'])
+    window.agApp = angular.module('agApp', ['ui.router', 'ngMaterial'])
         .config(Config)
         .run(Run);
 
@@ -12,21 +12,33 @@
         //
         // For any unmatched url, redirect to home
         $urlRouterProvider.otherwise("/map-list");
+        
         //
         // Now set up the states
-        $stateProvider.state('Maps', {
+        
+        $stateProvider.state('map-list', {
             url: "/map-list",
             templateUrl: "app/Map-list/map-list.html"
         });
-        $stateProvider.state('menus', {
-            url: "/menu-list",
-            templateUrl: "app/menu-list/menu-list.html"
+        
+        $stateProvider.state('map-menu', {
+            url: "/map-menu/{mapId}",
+            templateUrl: "app/map-menu/map-menu.html"
         });
 
         $stateProvider.state('map', {
             url: "/map",
-            templateUrl: "app/map/map.html"
+            templateUrl: "app/map/map.html",
+            parent: 'map-menu'
         });
+
+        $stateProvider.state('zombies', {
+            url: "/zombies",
+            templateUrl: "app/zombies/zombies.html",
+            parent: 'map-menu'
+        });
+        
+        
     }
 
     function Run() {

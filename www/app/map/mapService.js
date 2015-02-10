@@ -16,6 +16,11 @@
                     mapId: 1,
                     displayName: "Map",
                 },
+                {
+                    mapId: 2,
+                    displayName: "turkey",
+                },
+                
             ]
         }
     }

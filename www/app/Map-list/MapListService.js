@@ -5,7 +5,8 @@
 
     function Service() {
         var service = {
-            GetMaps: GetMaps
+            GetMaps: GetMaps,
+            GetMap: GetMap
         };
 
         return service;
@@ -24,6 +25,15 @@
                 }
 
             ]
+        }
+        
+        function GetMap(mapId) {
+            var allMaps = GetMaps();
+            for(var i = 0; i < allMaps.length; i++) {
+                if (allMaps[i].mapId === mapId) {
+                    return allMaps[i];
+                }
+            }
         }
     }
 
