@@ -18,7 +18,7 @@
         
         $stateProvider.state('map-list', {
             url: "/map-list",
-            templateUrl: "app/Map-list/map-list.html"
+            templateUrl: "app/map-list/map-list.html"
         });
         
         $stateProvider.state('map-menu', {
