@@ -20,17 +20,17 @@
                 {
                     menuId: 2,
                     displayName: "Zombies",
-                    route:"map",
+                    route:"Zombies",
                 },
                 {
                     menuId: 3,
                     displayName: "Weapons",
-                    route:"map",
+                    route:"Weapons",
                 },
                 {
                     menuId: 4,
                     displayName: "Exo-Upgrades",
-                    route:"map",
+                    route:"ExoUpgrades",
                 },
                 {
                     menuId: 5,
@@ -40,27 +40,27 @@
                 {
                     menuId: 6,
                     displayName: "Characters",
-                    route:"map",
+                    route:"Characters",
                 },
                 {
                     menuId: 7,
                     displayName: "Drops",
-                    route:"map",
+                    route:"Drops",
                 },
                 {
                     menuId: 8,
                     displayName: "Song",
-                    route:"map",
+                    route:"Song",
                 },
                 {
                     menuId: 9,
                     displayName: "Game Over, Man",
-                    route:"map",
+                    route:"GameOverMan",
                 },
                 {
                     menuId: 10,
                     displayName: "Achievements/Trophys",
-                    route:"map",
+                    route:"AchiecementsTrophys",
                 }
                 
 

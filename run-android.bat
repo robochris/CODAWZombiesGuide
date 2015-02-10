@@ -1,3 +1,3 @@
-cd C:\Projects\CODAWZombiesGuide\
+cd C:\Projects\CODAWZombiesGuide
 phonegap run android
 pause
