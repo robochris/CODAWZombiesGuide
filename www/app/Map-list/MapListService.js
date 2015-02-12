@@ -30,7 +30,7 @@
         function GetMap(mapId) {
             var allMaps = GetMaps();
             for(var i = 0; i < allMaps.length; i++) {
-                if (allMaps[i].mapId === mapId) {
+                if (allMaps[i].mapId == mapId) {
                     return allMaps[i];
                 }
             }

@@ -11,7 +11,7 @@
         Activate();
 
         function Activate() {
-            //vm.map = MapService.GetMap();
+            vm.map = MapService.GetMap();
         }
     }
 

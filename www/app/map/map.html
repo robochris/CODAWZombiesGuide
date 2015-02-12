@@ -1,4 +1,7 @@
 <div ng-controller="MapController as map">
-    map here!
+    <div ng-repeat="map in map.map" class="map">
+        <div class="mapimage">
+            <img ng-src={{map.imageUrl}} />
+        </div>
+    </div>
 </div>
-

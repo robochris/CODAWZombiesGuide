@@ -37,7 +37,41 @@
             templateUrl: "app/zombies/zombies.html",
             parent: 'map-menu'
         });
-        
+        $stateProvider.state('weapons', {
+            url: "/weapons",
+            templateUrl: "app/weapons/weapons.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('exo-upgrades', {
+            url: "/exo-upgrades",
+            templateUrl: "app/exo-upgrades/exoUpgrades.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('characters', {
+            url: "/characters",
+            templateUrl: "app/character/characters.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('drops', {
+            url: "/drops",
+            templateUrl: "app/drops/drops.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('features', {
+            url: "/features",
+            templateUrl: "app/features/features.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('song', {
+            url: "/song",
+            templateUrl: "app/song/song.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('achiecementstrophys', {
+            url: "/achiecementstrophys",
+            templateUrl: "app/achiecementstrophys/achiecementstrophys.html",
+            parent: 'map-menu'
+        });
         
     }
 
