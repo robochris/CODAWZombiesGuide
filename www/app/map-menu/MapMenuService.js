@@ -6,14 +6,14 @@
     function Service() {
         var service = {
             GetMenuItems: GetMenuItems,
-            
+
         };
 
         return service;
 
         function GetMenuItems() {
             return [
-
+                //if (mapId === 1) {
                 
                     {
                         menuId: 1,
@@ -30,7 +30,7 @@
                     }, {
                         menuId: 4,
                         displayName: "Exo-Upgrades",
-                        route: "exoUpgrades",
+                        route: "exoupgrades",
                     }, {
                         menuId: 5,
                         displayName: "Features",
@@ -53,10 +53,16 @@
                         route: "GameOverMan",
                     }, {
                         menuId: 10,
-                        displayName: "Achievements/Trophys",
-                        route: "AchiecementsTrophys",
+                        displayName: "Achievements",
+                        route: "achievements",
                     }
-
+                /*} else if (mapId===2) {
+                    {
+                        menuId: 1,
+                        displayName: "Achievements",
+                        route: "achievements",
+                    }
+                }*/
             ]
 
         }

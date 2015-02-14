@@ -42,9 +42,9 @@
             templateUrl: "app/weapons/weapons.html",
             parent: 'map-menu'
         });
-        $stateProvider.state('exo-upgrades', {
+        $stateProvider.state('exoupgrades', {
             url: "/exo-upgrades",
-            templateUrl: "app/exo-upgrades/exoUpgrades.html",
+            templateUrl: "app/exo-upgrades/exoUpgrade.html",
             parent: 'map-menu'
         });
         $stateProvider.state('characters', {
@@ -67,9 +67,9 @@
             templateUrl: "app/song/song.html",
             parent: 'map-menu'
         });
-        $stateProvider.state('achiecementstrophys', {
-            url: "/achiecementstrophys",
-            templateUrl: "app/achiecementstrophys/achiecementstrophys.html",
+        $stateProvider.state('achievements', {
+            url: "/achievements",
+            templateUrl: "app/achievements/achievements.html",
             parent: 'map-menu'
         });
         
