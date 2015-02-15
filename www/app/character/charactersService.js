@@ -14,12 +14,25 @@
             return [
                 {
                     CharacterId: 1,
-                    displayName: "Resupply",
+                    displayName: "Oz",
                 },
                 {
                     CharacterId: 2,
-                    displayName: "DNA Bomb",
+                    displayName: "Lilith",
                 },
+                {
+                    CharacterId: 3,
+                    displayName: "Kahn",
+                },
+                {
+                    CharacterId: 4,
+                    displayName: "Decker",
+                },
+                {
+                    CharacterId: 5,
+                    displayName: "Angie",
+                },
+                
 
             ]
         }

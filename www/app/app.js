@@ -72,6 +72,11 @@
             templateUrl: "app/achievements/achievements.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('storys', {
+            url: "/story",
+            templateUrl: "app/story/story.html",
+            parent: 'map-menu'
+        });
         
     }
 

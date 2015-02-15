@@ -20,6 +20,28 @@
                     DropId: 2,
                     displayName: "DNA Bomb",
                 },
+                {
+                    DropId: 3,
+                    displayName: "Hyper-Damage",
+                },
+                {
+                    DropId: 4,
+                    displayName: "Multiplier",
+                },
+                {
+                    DropId: 5,
+                    displayName: "Security",
+                },
+                {
+                    DropId: 6,
+                    displayName: "Full Reload",
+                },
+                {
+                    DropId: 7,
+                    displayName: "Power Surge",
+                },
+                
+                
 
             ]
         }

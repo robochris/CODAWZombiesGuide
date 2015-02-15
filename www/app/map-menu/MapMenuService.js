@@ -3,6 +3,8 @@
 
     window.agApp.service('MapMenuService', Service);
 
+    
+
     function Service() {
         var service = {
             GetMenuItems: GetMenuItems,
@@ -11,10 +13,10 @@
 
         return service;
 
-        function GetMenuItems() {
+        function GetMenuItems(mapId) {
+            if (mapId == 1) {
             return [
-                //if (mapId === 1) {
-                
+
                     {
                         menuId: 1,
                         displayName: "Map",
@@ -55,19 +57,26 @@
                         menuId: 10,
                         displayName: "Achievements",
                         route: "achievements",
-                    }
-                /*} else if (mapId===2) {
+                    },
                     {
-                        menuId: 1,
-                        displayName: "Achievements",
-                        route: "achievements",
+                        menuId: 11,
+                        displayName: "Story",
+                        route: "storys",
                     }
-                }*/
             ]
+                } else if (mapId == 2) {
+                    return [
+                        {
+                            menuId: 1,
+                            displayName: "Achievements",
+                            route: "achievements",
+                        }
 
+                ]
+
+                }
         }
+
     }
-
-
 
 })();

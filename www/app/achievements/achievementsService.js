@@ -14,12 +14,45 @@
             return [
                 {
                     AchievementId: 1,
-                    displayName: "cool thing",
+                    displayName: "I'm Alive!",
                 },
                 {
                     AchievementId: 2,
-                    displayName: "something",
+                    displayName: "PC Load Letter",
                 },
+                {
+                    AchievementId: 3,
+                    displayName: "Game Over, Man!",
+                },
+                {
+                    AchievementId: 4,
+                    displayName: "Cheapskate",
+                },
+                {
+                    AchievementId: 5,
+                    displayName: "Moneybags",
+                },
+                {
+                    AchievementId: 6,
+                    displayName: "Survivor",
+                },
+                {
+                    AchievementId: 7,
+                    displayName: "Burgle Burgle Burgle",
+                },
+                {
+                    AchievementId: 8,
+                    displayName: "Do You Even Exo?",
+                },
+                {
+                    AchievementId: 9,
+                    displayName: "Come On And ...",
+                },
+                {
+                    AchievementId: 10,
+                    displayName: "20/20",
+                },
+                
 
             ]
         }

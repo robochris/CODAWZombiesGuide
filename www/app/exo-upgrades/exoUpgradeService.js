@@ -14,11 +14,23 @@
             return [
                 {
                     ExoupgradeId: 1,
-                    displayName: "Soldier",
+                    displayName: "Exo-Soldier",
                 },
                 {
                     ExoupgradeId: 2,
                     displayName: "Exo-Health",
+                },
+                {
+                    ExoupgradeId: 3,
+                    displayName: "Exo-Reload",
+                },
+                {
+                    ExoupgradeId: 4,
+                    displayName: "Exo-Slam",
+                },
+                {
+                    ExoupgradeId: 4,
+                    displayName: "Exo-Medic",
                 },
 
             ]

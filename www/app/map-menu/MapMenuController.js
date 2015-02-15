@@ -18,7 +18,7 @@
 
         
         function Activate() {
-            vm.menuItems = MapMenuService.GetMenuItems();
+            vm.menuItems = MapMenuService.GetMenuItems(vm.mapId);
         }
         
         function ToggleMenu() {
