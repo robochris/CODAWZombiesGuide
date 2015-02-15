@@ -14,7 +14,7 @@
         return service;
 
         function GetMenuItems(mapId) {
-            if (mapId == 1) {
+            if (mapId == 2) {
             return [
 
                     {
@@ -64,13 +64,33 @@
                         route: "storys",
                     }
             ]
-                } else if (mapId == 2) {
+                } else if (mapId == 1) {
                     return [
                         {
                             menuId: 1,
                             displayName: "Achievements",
                             route: "achievements",
-                        }
+                        },
+                        {
+                            menuId: 2,
+                            displayName: "Weapons",
+                            route: "weapons",
+                        },
+                        {
+                            menuId: 3,
+                            displayName: "Zombies",
+                            route: "zombies",
+                        },
+                        {
+                            menuId: 4,
+                            displayName: "Story",
+                            route: "storys",
+                        },
+                        {
+                            menuId: 5,
+                            displayName: "Map",
+                            route: "map",
+                        },
 
                 ]
 
