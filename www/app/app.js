@@ -77,6 +77,11 @@
             templateUrl: "app/story/story.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('character', {
+        url: "/character/{CharacterId}",
+            templateUrl: "app/character/thatCharacter/thatCharacter.html",
+            parent:'map-menu'
+        });
         
     }
 
