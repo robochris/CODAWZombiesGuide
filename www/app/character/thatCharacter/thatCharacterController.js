@@ -4,7 +4,7 @@
     window.agApp.controller('thatCharacterController', Controller);
 
 
-    function Controller(thatCharacterService, charactersService, $stateParams) {
+    function Controller(thatCharacterService, $stateParams) {
         var vm = this;
         vm.CharacterId= $stateParams.CharacterId;
         vm.character = [];

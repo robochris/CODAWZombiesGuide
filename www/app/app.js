@@ -82,7 +82,21 @@
             templateUrl: "app/character/thatCharacter/thatCharacter.html",
             parent:'map-menu'
         });
-        
+        $stateProvider.state('achievement', {
+            url: "/achievement/{AchievementId}",
+            templateUrl: "app/achievements/thatAchievement/thatAchievement.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('drop', {
+            url: "/drop/{DropId}",
+            templateUrl: "app/drops/thatDrop/thatDrop.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('exoupgrade', {
+            url: "/exo-upgrade/{ExoupgradeId}",
+            templateUrl: "app/exo-upgrades/thatexoupgrade/thatexoupgrade.html",
+            parent: 'map-menu'
+        });
     }
 
     function Run() {

@@ -59,10 +59,10 @@
             } else if (mapId == 1) {
                 return [
                     {
-                        AchievementId: 9,
+                        AchievementId: 11,
                         displayName: "Class Warfare",
                 }, {
-                        AchievementId: 9,
+                        AchievementId: 12,
                         displayName: "Exo Survivor",
                 },
                 ]
