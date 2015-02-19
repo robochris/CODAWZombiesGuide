@@ -17,30 +17,30 @@
                     displayName: "Power Switch",
                 },
                 {
-                    DropId: 2,
+                    FeatureId: 2,
                     displayName: "Upgrade Station",
                 },
                 {
-                    DropId: 3,
+                    FeatureId: 3,
                     displayName: "Orbital Care Packages",
                 },
                 {
-                    DropId: 4,
+                    FeatureId: 4,
                     displayName: "Decontamination Zone",
                 },
                 {
-                    DropId: 5,
+                    FeatureId: 5,
                     displayName: "3D Printer",
                 },
                 {
-                    DropId: 6,
+                    FeatureId: 6,
                     displayName: "Trash Chute",
                 },
                 {
-                    DropId: 7,
+                    FeatureId: 7,
                     displayName: "Credit Dispenser",
                 },
-                
+
 
             ]
         }

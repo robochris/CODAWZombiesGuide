@@ -6,9 +6,9 @@
 
     function Controller(thatCharacterService, $stateParams) {
         var vm = this;
-        vm.CharacterId= $stateParams.CharacterId;
+        vm.CharacterId = $stateParams.CharacterId;
         vm.character = [];
-        
+
         Activate();
 
         function Activate() {

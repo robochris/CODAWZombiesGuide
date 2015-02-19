@@ -1,18 +1,18 @@
 (function () {
     'use strict';
 
-    window.agApp.controller('thatExoupgradeController', Controller);
+    window.agApp.controller('thatfeatureController', Controller);
 
 
-    function Controller(thatExoupgradeService, $stateParams) {
+    function Controller(thatfeatureService, $stateParams) {
         var vm = this;
-        vm.ExoupgradeId= $stateParams.ExoupgradeId;
-        vm.exoupgrade = [];
-        
+        vm.FeatureId = $stateParams.FeatureId;
+        vm.feature = [];
+
         Activate();
 
         function Activate() {
-            vm.exoupgrade = thatExoupgradeService.GetThatExo(vm.ExoupgradeId);
+            vm.feature = thatfeatureService.GetThatFeature(vm.FeatureId);
         }
     }
 

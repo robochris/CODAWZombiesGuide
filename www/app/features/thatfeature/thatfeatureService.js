@@ -1,25 +1,17 @@
 (function () {
     'use strict';
 
-    window.agApp.service('thatExoupgradeService', Service);
+    window.agApp.service('thatfeatureService', Service);
 
     function Service() {
         var service = {
-            GetThatExo: GetThatExo
+            GetThatFeature: GetThatFeature
         };
 
         return service;
 
-        function GetThatExo(ExoupgradeId) {
-            if (ExoupgradeId == 1) {
-                return [
-                    {
-                        Id: 1,
-                        displayName: "Oz",
-                }
-            ]
-            }
-            if (ExoupgradeId == 2) {
+        function GetThatFeature(FeatureId) {
+            if (FeatureId == 1) {
                 return [
                     {
                         Id: 1,
@@ -27,19 +19,27 @@
                 }
             ]
             }
-            if (ExoupgradeId == 3) {
+            if (FeatureId == 2) {
                 return [
                     {
                         Id: 1,
-                        displayName: "Exo",
+                        displayName: "is",
                 }
             ]
             }
-            if (ExoupgradeId == 4) {
+            if (FeatureId == 3) {
                 return [
                     {
                         Id: 1,
-                        displayName: "cool",
+                        displayName: "the",
+                }
+            ]
+            }
+            if (FeatureId == 4) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "feature",
                 }
             ]
             }

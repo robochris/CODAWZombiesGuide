@@ -1,5 +1,5 @@
 <div ng-controller="featuresController as features">
-    <div ng-repeat="feature in features.features" class="feature" >
+    <div ng-repeat="feature in features.features" class="feature" ui-sref="feature({FeatureId: feature.FeatureId})">
         <div class="description">
             <div class="name">{{feature.displayName}}</div>
         </div>

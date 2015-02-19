@@ -4,11 +4,11 @@
     window.agApp.controller('thatAchievementController', Controller);
 
 
-    function Controller(thatAchievementService,$stateParams) {
+    function Controller(thatAchievementService, $stateParams) {
         var vm = this;
-        vm.AchievementId= $stateParams.AchievementId;
+        vm.AchievementId = $stateParams.AchievementId;
         vm.achievement = [];
-        
+
         Activate();
 
         function Activate() {

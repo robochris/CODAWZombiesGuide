@@ -48,7 +48,7 @@
                     }, {
                         menuId: 8,
                         displayName: "Song(s)",
-                        route: "song",
+                        route: "songs",
                     }, {
                         menuId: 9,
                         displayName: "Game Over, Man",

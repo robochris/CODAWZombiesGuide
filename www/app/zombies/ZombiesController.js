@@ -4,14 +4,15 @@
     window.agApp.controller('ZombiesController', Controller);
 
 
-    function Controller(ZombiesService) {
+    function Controller(ZombiesService, $stateParams, $scope) {
         var vm = this;
         vm.zombies = [];
-
+        vm.mapId = $stateParams.mapId;
         Activate();
 
         function Activate() {
-            vm.zombies = ZombiesService.GetZombies();
+            $scope.mapMenu.selectedScreen = 'Zombies';
+            vm.zombies = ZombiesService.GetZombies(vm.mapId);
         }
     }
 

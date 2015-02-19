@@ -6,9 +6,9 @@
 
     function Controller(thatExoupgradeService, $stateParams) {
         var vm = this;
-        vm.ExoupgradeId= $stateParams.ExoupgradeId;
+        vm.ExoupgradeId = $stateParams.ExoupgradeId;
         vm.exoupgrade = [];
-        
+
         Activate();
 
         function Activate() {

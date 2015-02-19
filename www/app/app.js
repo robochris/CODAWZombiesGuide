@@ -62,8 +62,8 @@
             templateUrl: "app/features/features.html",
             parent: 'map-menu'
         });
-        $stateProvider.state('song', {
-            url: "/song",
+        $stateProvider.state('songs', {
+            url: "/songs",
             templateUrl: "app/song/song.html",
             parent: 'map-menu'
         });
@@ -95,6 +95,26 @@
         $stateProvider.state('exoupgrade', {
             url: "/exo-upgrade/{ExoupgradeId}",
             templateUrl: "app/exo-upgrades/thatexoupgrade/thatexoupgrade.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('feature', {
+            url: "/feature/{FeatureId}",
+            templateUrl: "app/features/thatfeature/thatfeature.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('song', {
+            url: "/feature/{SongId}",
+            templateUrl: "app/song/thatsong/thatSong.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('weapon', {
+            url: "/weapon/{WeaponId}",
+            templateUrl: "app/weapons/thatWeaponC/thatWeaponC.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('zombie', {
+            url: "/zombie/{ZombieId}",
+            templateUrl: "app/zombies/thatzombie/thatzombie.html",
             parent: 'map-menu'
         });
     }

@@ -6,9 +6,9 @@
 
     function Controller(thatDropService, $stateParams) {
         var vm = this;
-        vm.DropId= $stateParams.DropId;
+        vm.DropId = $stateParams.DropId;
         vm.drop = [];
-        
+
         Activate();
 
         function Activate() {
