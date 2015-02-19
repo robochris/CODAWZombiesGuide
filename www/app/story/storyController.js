@@ -4,13 +4,14 @@
     window.agApp.controller('storyController', Controller);
 
 
-    function Controller(storyService) {
+    function Controller(storyService, $scope) {
         var vm = this;
         vm.storys = [];
 
         Activate();
 
         function Activate() {
+            $scope.mapMenu.selectedScreen = 'Story';
             vm.storys = storyService.GetStorys();
         }
     }

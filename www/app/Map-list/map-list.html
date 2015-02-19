@@ -1,9 +1,12 @@
+<link rel="stylesheet" href="app/map-list.css">
+
+<div class="maintitle">
 <md-toolbar>
     <div class="md-toolbar-tools">
-        <i ui-sref="Home"  style="margin-right: 40px;"></i> CODAW Zombie Guide
+        <h1 style="margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto;">CODAW Zombie Guide</h1>
     </div>
 </md-toolbar>
-
+</div>
 <div ng-controller="MapListController as mapList">
     <div ng-repeat="map in mapList.maps" class="map" ui-sref="map-menu({mapId: map.mapId})">
         <div class="description">

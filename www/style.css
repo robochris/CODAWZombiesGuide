@@ -1,9 +1,8 @@
+html,
 body {
-background-color: #727071;
+    background-color: #727071;
 }
 
-.mapimage img{
-width: 100%;
-
+.mapimage img {
+    width: 100%;
 }
-

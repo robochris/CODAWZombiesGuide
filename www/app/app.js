@@ -6,21 +6,25 @@
         .run(Run);
 
 
-    function Config($stateProvider, $urlRouterProvider) {
+    function Config($stateProvider, $urlRouterProvider, $mdThemingProvider) {
         console.log('config');
+
+        $mdThemingProvider.theme('default')
+            .primaryPalette('orange')
+            .accentPalette('red');
 
         //
         // For any unmatched url, redirect to home
         $urlRouterProvider.otherwise("/map-list");
-        
+
         //
         // Now set up the states
-        
+
         $stateProvider.state('map-list', {
             url: "/map-list",
             templateUrl: "app/map-list/map-list.html"
         });
-        
+
         $stateProvider.state('map-menu', {
             url: "/map-menu/{mapId}",
             templateUrl: "app/map-menu/map-menu.html"
@@ -77,10 +81,15 @@
             templateUrl: "app/story/story.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('eastereggs', {
+            url: "/eastereggs",
+            templateUrl: "app/EasterEggs/easterEggs.html",
+            parent: 'map-menu'
+        });
         $stateProvider.state('character', {
-        url: "/character/{CharacterId}",
+            url: "/character/{CharacterId}",
             templateUrl: "app/character/thatCharacter/thatCharacter.html",
-            parent:'map-menu'
+            parent: 'map-menu'
         });
         $stateProvider.state('achievement', {
             url: "/achievement/{AchievementId}",

@@ -43,7 +43,7 @@
                         route: "characters",
                     }, {
                         menuId: 7,
-                        displayName: "Drops",
+                        displayName: "Power-Ups",
                         route: "drops",
                     }, {
                         menuId: 8,
@@ -52,7 +52,7 @@
                     }, {
                         menuId: 9,
                         displayName: "Game Over, Man",
-                        route: "GameOverMan",
+                        route: "eastereggs",
                     }, {
                         menuId: 10,
                         displayName: "Achievements",
