@@ -1,0 +1,13 @@
+.name {
+    
+font-size: 40px;
+border-bottom: 3px solid red;
+
+    padding: 10px;
+        margin: 0 auto;
+}
+
+.md-toolbar-tools h1{
+font-size: 30px;
+
+}
