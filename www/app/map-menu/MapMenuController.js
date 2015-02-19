@@ -9,15 +9,16 @@
         vm.mapId = $stateParams.mapId;
         vm.menuItems = [];
         vm.menuOnly = true;
-        
+        vm.theMap = MapListService.GetMap(vm.mapId);
         vm.ToggleMenu = ToggleMenu;
         
-        vm.mapId = MapListService.GetMap();
+        
         
         Activate();
 
+        
         function Activate() {
-            vm.menuItems = MapMenuService.GetMenuItems();
+            vm.menuItems = MapMenuService.GetMenuItems(vm.mapId);
         }
         
         function ToggleMenu() {

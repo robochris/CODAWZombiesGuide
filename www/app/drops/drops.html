@@ -1,0 +1,7 @@
+<div ng-controller="dropsController as drops">
+    <div ng-repeat="drop in drops.drops" class="drop" ui-sref="drop({DropId: drop.DropId})">
+        <div class="description">
+            <div class="name">{{drop.displayName}}</div>
+        </div>
+    </div>
+</div>

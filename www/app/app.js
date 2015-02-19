@@ -37,8 +37,66 @@
             templateUrl: "app/zombies/zombies.html",
             parent: 'map-menu'
         });
-        
-        
+        $stateProvider.state('weapons', {
+            url: "/weapons",
+            templateUrl: "app/weapons/weapons.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('exoupgrades', {
+            url: "/exo-upgrades",
+            templateUrl: "app/exo-upgrades/exoUpgrade.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('characters', {
+            url: "/characters",
+            templateUrl: "app/character/characters.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('drops', {
+            url: "/drops",
+            templateUrl: "app/drops/drops.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('features', {
+            url: "/features",
+            templateUrl: "app/features/features.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('song', {
+            url: "/song",
+            templateUrl: "app/song/song.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('achievements', {
+            url: "/achievements",
+            templateUrl: "app/achievements/achievements.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('storys', {
+            url: "/story",
+            templateUrl: "app/story/story.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('character', {
+        url: "/character/{CharacterId}",
+            templateUrl: "app/character/thatCharacter/thatCharacter.html",
+            parent:'map-menu'
+        });
+        $stateProvider.state('achievement', {
+            url: "/achievement/{AchievementId}",
+            templateUrl: "app/achievements/thatAchievement/thatAchievement.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('drop', {
+            url: "/drop/{DropId}",
+            templateUrl: "app/drops/thatDrop/thatDrop.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('exoupgrade', {
+            url: "/exo-upgrade/{ExoupgradeId}",
+            templateUrl: "app/exo-upgrades/thatexoupgrade/thatexoupgrade.html",
+            parent: 'map-menu'
+        });
     }
 
     function Run() {

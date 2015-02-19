@@ -1,3 +1,9 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <i ui-sref="Home"  style="margin-right: 40px;"></i> CODAW Zombie Guide
+    </div>
+</md-toolbar>
+
 <div ng-controller="MapListController as mapList">
     <div ng-repeat="map in mapList.maps" class="map" ui-sref="map-menu({mapId: map.mapId})">
         <div class="description">
@@ -8,3 +14,4 @@
         </div>
     </div>
 </div>
+

@@ -3,69 +3,100 @@
 
     window.agApp.service('MapMenuService', Service);
 
+    
+
     function Service() {
         var service = {
-            GetMenuItems: GetMenuItems
+            GetMenuItems: GetMenuItems,
+
         };
 
         return service;
 
-        function GetMenuItems() {
+        function GetMenuItems(mapId) {
+            if (mapId == 2) {
             return [
-                {
-                    menuId: 1,
-                    displayName: "Map",
-                    route:"map",
-                },
-                {
-                    menuId: 2,
-                    displayName: "Zombies",
-                    route:"map",
-                },
-                {
-                    menuId: 3,
-                    displayName: "Weapons",
-                    route:"map",
-                },
-                {
-                    menuId: 4,
-                    displayName: "Exo-Upgrades",
-                    route:"map",
-                },
-                {
-                    menuId: 5,
-                    displayName: "Features",
-                    route:"map",
-                },
-                {
-                    menuId: 6,
-                    displayName: "Characters",
-                    route:"map",
-                },
-                {
-                    menuId: 7,
-                    displayName: "Drops",
-                    route:"map",
-                },
-                {
-                    menuId: 8,
-                    displayName: "Song",
-                    route:"map",
-                },
-                {
-                    menuId: 9,
-                    displayName: "Game Over, Man",
-                    route:"map",
-                },
-                {
-                    menuId: 10,
-                    displayName: "Achievements/Trophys",
-                    route:"map",
-                }
-                
 
+                    {
+                        menuId: 1,
+                        displayName: "Map",
+                        route: "map",
+                    }, {
+                        menuId: 2,
+                        displayName: "Zombies",
+                        route: "zombies",
+                    }, {
+                        menuId: 3,
+                        displayName: "Weapons",
+                        route: "weapons",
+                    }, {
+                        menuId: 4,
+                        displayName: "Exo-Upgrades",
+                        route: "exoupgrades",
+                    }, {
+                        menuId: 5,
+                        displayName: "Features",
+                        route: "features",
+                    }, {
+                        menuId: 6,
+                        displayName: "Characters",
+                        route: "characters",
+                    }, {
+                        menuId: 7,
+                        displayName: "Drops",
+                        route: "drops",
+                    }, {
+                        menuId: 8,
+                        displayName: "Song(s)",
+                        route: "song",
+                    }, {
+                        menuId: 9,
+                        displayName: "Game Over, Man",
+                        route: "GameOverMan",
+                    }, {
+                        menuId: 10,
+                        displayName: "Achievements",
+                        route: "achievements",
+                    },
+                    {
+                        menuId: 11,
+                        displayName: "Story",
+                        route: "storys",
+                    }
             ]
+                } else if (mapId == 1) {
+                    return [
+                        {
+                            menuId: 1,
+                            displayName: "Achievements",
+                            route: "achievements",
+                        },
+                        {
+                            menuId: 2,
+                            displayName: "Weapons",
+                            route: "weapons",
+                        },
+                        {
+                            menuId: 3,
+                            displayName: "Zombies",
+                            route: "zombies",
+                        },
+                        {
+                            menuId: 4,
+                            displayName: "Story",
+                            route: "storys",
+                        },
+                        {
+                            menuId: 5,
+                            displayName: "Map",
+                            route: "map",
+                        },
+
+                ]
+
+                }
         }
+
     }
 
 })();
