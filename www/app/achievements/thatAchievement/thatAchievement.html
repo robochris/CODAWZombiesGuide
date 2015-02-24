@@ -1,7 +1,369 @@
+<link rel="stylesheet" href="app/acheivement.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
 <div ng-controller="thatAchievementController as achievement">
-    <div ng-repeat="achievement in achievement.achievement" class="achievement">
+    <!--
+    {{achievement.achievement}}
+
+    <div class="name">
+        {{achievement.achievement.displayName}}
+    </div>
+    <div class="description">
+        {{achievement.achievement.description}}
+    </div>
+    <div class="howto">
+        {{achievement.achievement.howto}}
+    </div>
+-->
+
+    <div ng-show="{{achievement.AchievementId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150129072019/callofduty/images/c/c5/I'm_Alive!_Achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>I'm Alive</h1>
+            </div>
+            <div class="score">
+                <p>10G/Bronze</p>
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{achievement.displayName}}</div>
+            Survive until round 10
+        </div>
+        <div class="HTG">
+            This achievement is really easy. Just get to round 10 and thats all you have to do. The more players you have the more easier it is to get.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+
+
+
+    <div ng-show="{{achievement.AchievementId==2}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150129125218/callofduty/images/9/91/PC_Load_Letter_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>PC Load Letter</h1>
+            </div>
+            <div class="score">
+                <p>30G/Bronze</p>
+            </div>
+        </div>
+        <div class="description">
+            <p>Use the 3D Printer 15 times in a single match</p>
+        </div>
+        <div class="HTG">
+            This achievement is easy. All you have to do is get 15000 credits(This could also get you the Moneybags achievement) and buy the box all at once. You could also just play the game and buy the 3D printer when ever you can. Most likely you will get the achievement if your just trying to play because there is going to be some times where you get sucking guns or the gun you don't want.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==3}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img3.wikia.nocookie.net/__cb20150129125058/callofduty/images/2/2c/Game_Over%2C_Man%21_Achievement_Icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Game Over, Man!</h1>
+            </div>
+            <div class="score">
+                <p>50G/Bronze</p>
+            </div>
+        </div>
+        <div class="description">
+            Call in a rescue
+        </div>
+        <div class="HTG">
+            Look at "Game Over, Man" to get this achievement.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <div ng-show="{{achievement.AchievementId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img4.wikia.nocookie.net/__cb20150129124833/callofduty/images/6/62/Cheapskate_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Cheapskate</h1>
+            </div>
+            <div class="score">
+                <p>15G/Bronze</p>
+            </div>
+        </div>
+        <div class="description">
+            Acquire the exo suit without spending any money
+        </div>
+        <div class="HTG">
+            *Note* this requires at least 2 players in order to get this achievement.
+            This achievement is really easy. The people who are trying to get it can't buy anything what so ever.
+            You at least need one person to buy all the doors towards the exo room.
+            What ever way you go is up to you. There are no cheap ways. You can go to the right side or the left side.
+            You could also just play online and wait for people to buy the doors.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <div ng-show="{{achievement.AchievementId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150129124754/callofduty/images/9/95/Moneybags_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Moneybags</h1>
+            </div>
+            <div class="score">
+                <p>25G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Have 15000 credits in the bank
+        </div>
+        <div class="HTG">
+            Its that simple. The best way to get this faster is to get a wall gun cause some don't do that much damage as 3D printer guns.
+            Also try to get ATMs or power boxes or credit orbital drops.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img4.wikia.nocookie.net/__cb20150129073611/callofduty/images/c/c5/20_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Survivor</h1>
+            </div>
+            <div class="score">
+                <p>25G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Survive until round 25
+        </div>
+        <div class="HTG">
+            This is like the "I'm Alive" acheivement, but you have to get to round 25. Strongly recommend 2 or more players for people who are not that good at zombies cause it is deficult to get to round 25.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==7}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150129124912/callofduty/images/c/cd/Burgle_Burgle_Burgle_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Burgle Burgle Burgle</h1>
+            </div>
+            <div class="score">
+                <p>15G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Steal 10 kills from a teammate
+        </div>
+        <div class="HTG">
+            This achievement is some what easy. There are some times where you think you killed one of your teammates zombie but you really didn't.
+            To do this quick, grab a partner and let them shoot the zombies, not killing them, and then you kill them till you get the achievement. 
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==8}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://im4.trueachievements.com/imagestore/0001612600/1612643.jpg" />
+            </div>
+            <div class="game-title">
+                <h1>Do You Even Exo?</h1>
+            </div>
+            <div class="score">
+                <p>15G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Exo Melee kill 10 zombies in 30 seconds
+        </div>
+        <div class="HTG">
+            This is easy. Just wait till you get a hypro-damage power up. Then start knifing away untill you get it.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==9}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img4.wikia.nocookie.net/__cb20150129125149/callofduty/images/e/ef/Come_On_and..._achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Come On And...</h1>
+            </div>
+            <div class="score">
+                <p>25G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Slam 10 zombies at once
+        </div>
+        <div class="HTG">
+            *Note* You will need Exo-Slam, obviously, to get this. Fastest way to get this is to train at least 10 zombies or more, the more the better chance you have at getting it, and exo slam them.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==10}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img4.wikia.nocookie.net/__cb20150129073611/callofduty/images/c/c5/20_achievement_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>20/20</h1>
+            </div>
+            <div class="score">
+                <p>40G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Upgrade 2 weapons to level 20
+        </div>
+        <div class="HTG">
+            This achievement is hard. Especially if your new at zombies. The quickest way to get this is to buy one wall gun(keep your Atlas 25) and just try racking up some credits. Wants you have 2500 credits, you can get an upgrade on your gun at the upgade station. *Note* You will need 95000 credits total.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==11}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20140930002238/callofduty/images/f/f3/Class_Warfare_CoDAW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Class Warfare</h1>
+            </div>
+            <div class="score">
+                <p>10G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Play 30 minutes with each class online in Exo Survival
+        </div>
+        <div class="HTG">
+            *Note*You can also get this on local play as well.
+            You have to play wiht EVERY class for 30 minutes. The classes are The Light class, The Specialist class, The Heavy class and The Demolitions class. If you add up they all equal 2 hours. Unless if you want to wait for 2 hours doing nothing when there is a drone round.
+            I suggest you play a different survival map because they last longer. You could even put a timer for yourself when to switch.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+
+    <div ng-show="{{achievement.AchievementId==12}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20140930002721/callofduty/images/8/80/Exo_Survivor_CoDAW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Survivor</h1>
+            </div>
+            <div class="score">
+                <p>10G/Bronze</p>
+            </div>
+        </div>
+        <!--<div class="score">
+            30<img src="http://img1.wikia.nocookie.net/__cb20100607103511/gtawiki/images/9/94/Gamerscore_icon.png" width="13" height="12" alt="">/bronze<img src="http://playstation247.com/wp-content/uploads/2013/12/bronze-med.gif" width="13" height="12" alt="">
+        </div>
+        -->
+        <div class="description">
+            Successfully complete the Exo Survival Bonus Wave
+        </div>
+        <div class="HTG">
+            On round 11 zombies will start showing up. Kill all of them till you can escape the riot map. Wants you do a cut scene will apear.
+        </div>
+        <div class="howto">
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/4Dp_5NRXPWs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </div>
