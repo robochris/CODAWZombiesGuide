@@ -47,7 +47,7 @@
                         route: "drops",
                     }, {
                         menuId: 8,
-                        displayName: "Song(s)",
+                        displayName: "Ride of the Valkyries",
                         route: "songs({SongId: 1})",
                     }, {
                         menuId: 9,
