@@ -6,7 +6,7 @@
 
     function Controller(storyService, $scope) {
         var vm = this;
-        vm.storys = [];
+        vm.storys = null;
 
         Activate();
 

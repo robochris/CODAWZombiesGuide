@@ -12,6 +12,7 @@
         Activate();
 
         function Activate() {
+            $scope.mapMenu.selectedScreen = 'Power-Up';
             vm.drop = thatDropService.GetThatDrop(vm.DropId);
         }
     }

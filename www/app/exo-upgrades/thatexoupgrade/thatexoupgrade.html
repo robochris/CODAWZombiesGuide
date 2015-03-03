@@ -1,7 +1,109 @@
+<link rel="stylesheet" href="app/exo.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div ng-controller="thatExoupgradeController as Exo">
-    <div ng-repeat="exo in Exo.exoupgrade" class="exoupgrade">
+    <div ng-show="{{Exo.ExoupgradeId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150213173750/callofduty/images/f/f1/Exo_Soldier_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Soldier</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:1750 credits</p>
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{exo.displayName}}</div>
+            Exo Soldier allows the player to shoot and reload while sprinting and sliding. It also increases weapon swap speed and hip fire accuracy. Exo Soldier is particularly useful in higher rounds, as it allows the player to reload while sprinting, which is useful when being chased by a massive horde of zombies.
+            <br>
+            <br>
+            On Outbreak, this upgrade is located in the Holding
+        </div>
+    </div>
+    
+    <div ng-show="{{Exo.ExoupgradeId==2}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150214103924/callofduty/images/4/48/Exo_Health_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Health</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:2500 credits</p>
+            </div>
+        </div>
+        <div class="description">
+            Exo Health increases the player's health. Which allows the player to take seven hits before being downed
+            <br>
+            <br>
+            On Outbreak, this upgrade is located in Holding.
+        </div>
+    </div>
+    
+    <div ng-show="{{Exo.ExoupgradeId==3}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150213175555/callofduty/images/4/4c/Exo_Reload_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Reload</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:2000 credits</p>
+            </div>
+        </div>
+        <div class="description">
+            Exo Reload's effect is most useful and noticeable on weapons with slow reload times, such as light machine guns and shotguns, but due to its high cost, it is ill-advised to purchase without Exo Health unless in dire need.
+            <br>
+            <br> On Outbreak, this upgrade is located in the Morgue.
+        </div>
+    </div>
+    
+    <div ng-show="{{Exo.ExoupgradeId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150213174815/callofduty/images/2/2e/Exo_Slam_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Slam</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:2000 credits</p>
+            </div>
+        </div>
+        <div class="description">
+            Exo Slam allows the player to perform Boost Slam attacks. Boost Slam is a powerful attack that is able to daze or kill zombies in the area of effect, and is even able to make crawlers up to round 25.
+            <br>
+            <br>
+            To use, double jump then press B.
+            <br>
+            In Outbreak, this upgrade is located in the Main Hub.
+        </div>
+    </div>
+    
+    <div ng-show="{{Exo.ExoupgradeId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150213173004/callofduty/images/4/4d/Exo_Medic_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Medic</h1>
+            </div>
+            <div class="cost">
+                <p>Cost: 500 solo/1500 MP credits</p>
+            </div>
+        </div>
+        <div class="description">
+            Exo Medic makes the player revive teammates twice as fast or allows the player to revive themselves (only applies when playing solo).
+            <br>
+            <br>
+            On Solo:
+            <br>
+             When the player is downed, they will be equipped with their handgun (Atlas 45 if the player doesn't have one) while they are down and will be revived shortly after. The zombies will move away from the player while they are being revived. It can be bought only three times before becoming unavailable for the rest of the game.
+            If the player has a different pistol or the CEL-3 Cauterizer, they will use that when they are down. 
+            
         </div>
     </div>
 </div>

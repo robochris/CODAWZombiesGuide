@@ -1,7 +1,24 @@
+<link rel="stylesheet" href="app/egg.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div ng-controller="easterEggsController as eastereggs">
-    <div ng-repeat="easteregg in eastereggs.eastereggs" class="easteregg" >
+    <div ng-show="{{eastereggs.EasterEggId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150213173750/callofduty/images/f/f1/Exo_Soldier_icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Soldier</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:1750 credits</p>
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{easteregg.displayName}}</div>
+            Exo Soldier allows the player to shoot and reload while sprinting and sliding. It also increases weapon swap speed and hip fire accuracy. Exo Soldier is particularly useful in higher rounds, as it allows the player to reload while sprinting, which is useful when being chased by a massive horde of zombies.
+            <br>
+            <br>
+            On Outbreak, this upgrade is located in the Holding
         </div>
     </div>
 </div>

@@ -38,7 +38,7 @@
                 },
                 {
                     FeatureId: 7,
-                    displayName: "Credit Dispenser",
+                    displayName: "ATM",
                 },
 
 

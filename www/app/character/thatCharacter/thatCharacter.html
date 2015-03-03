@@ -1,7 +1,31 @@
+<link rel="stylesheet" href="app/character.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div ng-controller="thatCharacterController as character">
-    <div ng-repeat="character in character.character" class="character">
+    <div ng-show="{{character.CharacterId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150120003905/callofduty/images/thumb/2/20/ActivePersonnal_Oz_D01.jpg/280px-ActivePersonnal_Oz_D01.jpg" />
+            </div>
+            <div class="game-title">
+                <h1>Oz</h1>
+            </div>
+            <div class="stuff">
+                Rank:Janitor
+                <br>
+                Sex:Male
+                <br>
+                Hieght:6'0"
+                <br>
+                Hair:Grey(balding)
+                <br>
+                Eyes:Brown
+                <br>
+                Actor:John Malkovich
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{character.displayName}}</div>
+            Oz works as a janitor in an Atlas research facility. On one night, while performing his usual clean up duty, Oz spots streaks of blood on the ground, along with several broken glass casings and some dead bodies. Afterwards, a zombie outbreak occurs in the facility, forcing him to evacuate. He arrives at the helicopter landing pad along with three other Atlas employees, Lilith, Decker, and Kahn. The rescue Warbird is attacked by zombies and crashes down, forcing Oz and the others to team up to survive against the onslaught of zombies. In an attempt to escape, all four survivors retrieve their employee keycards, and use them to call in a second Warbird for extraction. However, as the Warbird approaches the facility, it is shot down by an unknown rocket, leaving the four survivors stranded. Oz' fate, along with the others, is currently unknown
         </div>
     </div>
 </div>

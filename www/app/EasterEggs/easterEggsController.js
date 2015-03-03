@@ -4,15 +4,16 @@
     window.agApp.controller('easterEggsController', Controller);
 
 
-    function Controller(easterEggsService, $scope) {
+    function Controller(easterEggsService,$stateParams, $scope) {
         var vm = this;
-        vm.eastereggs = [];
+        vm.EasterEggId = $stateParams.EasterEggId;
+        vm.easteregg = null;
 
         Activate();
 
         function Activate() {
-            $scope.mapMenu.selectedScreen = 'Game Over, Man';
-            vm.eastereggs = easterEggsService.GetEasterEgg();
+            vm.easteregg = easterEggsService.GetEasterEgg();
+            $scope.mapMenu.selectedScreen = vm.easteregg.displayName;
         }
     }
 

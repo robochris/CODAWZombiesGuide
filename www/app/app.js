@@ -10,8 +10,8 @@
         console.log('config');
 
         $mdThemingProvider.theme('default')
-            .primaryPalette('orange')
-            .accentPalette('red');
+            .primaryPalette('light-blue')
+            .accentPalette('pink');
 
         //
         // For any unmatched url, redirect to home
@@ -67,7 +67,7 @@
             parent: 'map-menu'
         });
         $stateProvider.state('songs', {
-            url: "/songs",
+            url: "/songs/{SongId}",
             templateUrl: "app/song/song.html",
             parent: 'map-menu'
         });
@@ -82,7 +82,7 @@
             parent: 'map-menu'
         });
         $stateProvider.state('eastereggs', {
-            url: "/eastereggs",
+            url: "/eastereggs/{EasterEggId}",
             templateUrl: "app/EasterEggs/easterEggs.html",
             parent: 'map-menu'
         });
@@ -109,11 +109,6 @@
         $stateProvider.state('feature', {
             url: "/feature/{FeatureId}",
             templateUrl: "app/features/thatfeature/thatfeature.html",
-            parent: 'map-menu'
-        });
-        $stateProvider.state('song', {
-            url: "/feature/{SongId}",
-            templateUrl: "app/song/thatsong/thatSong.html",
             parent: 'map-menu'
         });
         $stateProvider.state('weapon', {

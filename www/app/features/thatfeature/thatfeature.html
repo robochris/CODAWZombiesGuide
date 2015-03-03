@@ -1,7 +1,163 @@
+<link rel="stylesheet" href="app/feature.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div ng-controller="thatfeatureController as feature">
-    <div ng-repeat="feature in feature.feature" class="feature">
+    <div ng-show="{{feature.FeatureId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150206060730/callofduty/images/thumb/c/cf/Power_switch_Courtyard_Outbreak_AW.png/200px-Power_switch_Courtyard_Outbreak_AW.webp" />
+            </div>
+            <div class="game-title">
+                <h1>Power Switch</h1>
+            </div>
+            <div class="credits">
+                <p>Credits Earned:100</p>
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{feature.displayName}}</div>
+            There are multiple power switches spread throughout the map, and each one, when activated, will give the player access to certain features requiring power to be accessed. A power switch will give 100 credits to the player who activated it.
+            <br>
+            <br> Features Include:
+            <br> -All Perks
+            <br>-Exo suits
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==2}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150221144523/callofduty/images/0/00/Upgrade_Station_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Upgrade Station</h1>
+            </div>
+            <div class="cost">
+                Cost: 2500/Upgrade
+            </div>
+        </div>
+        <div class="description">
+            Upgrades are permanent, meaning one can get rid of an upgraded gun and then buy it again off the wall or from the 3D Printer but without needing to start over with all the upgrades. Players to upgrade their weapons a maximum of 19 times per weapon up to Mk20. A secret experimental Upgrade Station can be unlocked by completing the "Game Over, Man" which will allow players to upgrade one more time to Mk25. Each time the player upgrades the gun, it will replenish ammo, gain a new camouflage, and get increased stats. In specific Mk levels, a new attachment may be added or maximum ammunition may be increased.
+            <br>
+            <br> There are three Upgrade Stations on Outbreak. The first two are located in the Morgue and in the Administration, and the last one is found in the Exo Testing room after completing "Game Over, Man".
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==3}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150218000846/callofduty/images/thumb/9/9d/Orbital_Care_Package_Menu_Icon_AW.png/200px-Orbital_Care_Package_Menu_Icon_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Orbital Care Packages</h1>
+            </div>
+        </div>
+        <div class="description">
+            Orbital Care Packages will randomly appear during rounds. Most of them will land in the starting area, although some may appear in the Exosuits Room after it has been opened. A player can stack a maximum of three Care Package items. It will contain one of the four following items:
+            <br>
+            <br> -A Remote Sentry with the Rippable module, and possibly the Rocket Turret module or the Directed Energy module.
+            <br> -A Aerial Assault Drone with the AI Control module and possibly the Rockets module.
+            <br> -The Camouflage bonus.
+            <br> -Credits. The amount of credits the player will gain will be randomized each time, ranging from 100 to 1000.
+            <br>
+            <br> *Note* When you pick a credit package while multiplier is on. You will get twice the number you would of had.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://www.callofdutyadvancedwarfare.co.uk/wp-content/uploads/2015/02/Decontamination-Zone-aw-zombies.png" />
+            </div>
+            <div class="game-title">
+                <h1>Decontamination Zone</h1>
+            </div>
+            <div class="cost">
+                Cost:250 credits
+            </div>
+        </div>
+        <div class="description">
+            During a Host wave; if the player is hit by a Host, they become "infected", and have a minute to be decontaminated, and every time the player is hit by a zombie while infected, the player will lose extra time from the counter. It will cleanse the player. It can also cleanse teammates while it is active. Upon being decontaminated, the player will gain invisibility from zombies for a few seconds. The device has a 10 second cooldown time.
+            <br>
+            <br> Located in the Administration room
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://i.ytimg.com/vi/Lb84A31CreQ/maxresdefault.jpg" />
+            </div>
+            <div class="game-title">
+                <h1>3D Printer</h1>
+            </div>
+            <div class="cost">
+                Cost: 1000 credits
+            </div>
+        </div>
+        <div class="description">
+            The 3D Printer gives you a random weapon.
+            <br>
+            <br> The 3D Printer visibly cycles through different weapons when idling, and upon purchase, the weapon currently on display becomes printed. This means the player can actually influence what weapon they receive. A bad thing is, the weapons switch very quickly making it difficult to receive ones desired weapon. The 3D Printer, if used enough times, will eventually malfunction, and another 3D Printer in another location will be activated.
+            <br>
+            <br> Locations Are:
+            <br> -Main Hub: In the central booth
+            <br> -Holding: On a room to the left when entering the Holding from the Main Hub
+            <br> -HallwayIn the hallway, close to the door to the Main Hub (default location)
+            <br> -Morgue: Below the staircase leading towards the Exo Testing room
+            <br> -Exo Testing room: Next to the staircase from the Morgue
+            <br>
+            <br> View the Weapons to see what weapons are in the 3D Printer
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://i.gyazo.com/4b9ac0beaa8d338d706c037c80819a96.png" />
+            </div>
+            <div class="game-title">
+                <h1>Trash Chute</h1>
+            </div>
+            <div class="cost">
+                Cost: First use:(100)
+                <br> next use:(500)
+                <br> adds (500) till (2000)
+            </div>
+        </div>
+        <div class="description">
+            Trash Chute will take any player who uses the chute. It can take you to a total of three possible locations depending on how and where the chute is used.
+            <br>
+            <br> Trash Chute Location:
+            <br> -behide upgrade station in the Administration room.
+            <br> -On the right when entering the Exo Room from the Morgue Door
+            <br>
+            <br> Location Drops:
+            <br> -Exo Room
+            <br> -Right by Exo Medic
+            <br> -Incinerator Room
+            <br>
+            <br> They cost 100 credits to be used - the first time in a round. The cost goes up to 500 for the next use (In the same round.) and then increasing by increments of 500 every use until maxing out at 2,000. The price for the using the Chute is reset after every round.
+            <br>
+            <br> Zombies cannot follow the players in the chute, making it a good way to escape quickly. The Trash Chute can also be used to aquire Decker's security card.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.FeatureId==7}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150212204702/callofduty/images/e/e7/Credit_Dispenser_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>ATM</h1>
+            </div>
+            <div class="credits">
+                Credits earn:100
+            </div>
+        </div>
+        <div class="description">
+            ATM's will give the player 100 credits each time they are used. Dispensers will be randomly activated during the game; any active one can be identified by its green screen. They will sometimes malfunction and start shooting out money. Range of 500 to about 1000 credits.
+            <br>
+            <br> *Note* When multiplier is on, the ATM will give you 200 credits.
         </div>
     </div>
 </div>

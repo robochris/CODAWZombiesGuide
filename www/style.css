@@ -1,8 +1,10 @@
 html,
 body {
-    background-color: #727071;
+    color: white;
+    background-color: black;
 }
 
 .mapimage img {
     width: 100%;
 }
+

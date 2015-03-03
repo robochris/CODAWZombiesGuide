@@ -29,7 +29,7 @@
                     displayName: "Exo-Slam",
                 },
                 {
-                    ExoupgradeId: 4,
+                    ExoupgradeId: 5,
                     displayName: "Exo-Medic",
                 },
 

@@ -48,11 +48,11 @@
                     }, {
                         menuId: 8,
                         displayName: "Song(s)",
-                        route: "songs",
+                        route: "songs({SongId: 1})",
                     }, {
                         menuId: 9,
                         displayName: "Game Over, Man",
-                        route: "eastereggs",
+                        route: "eastereggs({EasterEggId: 1})",
                     }, {
                         menuId: 10,
                         displayName: "Achievements",

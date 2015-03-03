@@ -11,14 +11,13 @@
         return service;
 
         function GetSongs() {
-            return [
-                {
+            return {
                     SongId: 1,
                     displayName: "Ride of the Valkyries",
-                },
+                };
                 
 
-            ]
+            
         }
     }
 

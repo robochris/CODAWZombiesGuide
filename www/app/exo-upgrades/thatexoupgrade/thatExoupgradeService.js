@@ -43,6 +43,14 @@
                 }
             ]
             }
+            if (ExoupgradeId == 4) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "cool",
+                }
+            ]
+            }
         }
     }
 })();

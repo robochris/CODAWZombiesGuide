@@ -1,7 +1,117 @@
+<link rel="stylesheet" href="app/power-up.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div ng-controller="thatDropController as drop">
-    <div ng-repeat="drop in drop.drop" class="drop">
+    <div ng-show="{{drop.DropId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150207183355/callofduty/images/e/e9/Resupply_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Resupply</h1>
+            </div>
+        </div>
         <div class="description">
-            <div class="name">{{drop.displayName}}</div>
+            It is dropped by players upon death. When picked up, the player will obtain one of their dropped weapons. Only the player that died may pick a Resupply power-up.
         </div>
     </div>
+    
+    <div ng-show="{{drop.DropId==2}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150206171651/callofduty/images/a/a6/DNA_Bomb_Exo_Zombies_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>DNA Bomb</h1>
+            </div>
+        </div>
+        <div class="description">
+            Zombies will drop this. When activated, it will produce a green flash, and every Zombie in the map will be killed.
+        </div>
+    </div>
+    
+    <div ng-show="{{drop.DropId==3}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img3.wikia.nocookie.net/__cb20150206171720/callofduty/images/thumb/9/9d/Hyper-Damage_AW.png/100px-Hyper-Damage_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Hyper Damage</h1>
+            </div>
+        </div>
+        <div class="description">
+            It is droped by Zombies. When activated, it will allow you to hit zombies with one punch or bullet.
+        </div>
+    </div>
+    
+    <div ng-show="{{drop.DropId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img4.wikia.nocookie.net/__cb20150206171619/callofduty/images/c/cb/Multiplier_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Multiplier</h1>
+            </div>
+        </div>
+        <div class="description">
+            Droped by Zombies. When activated, it will double the credits you get. 
+            <br>
+            <br>
+            If a zombie is shot and gives you 10 credits. Then you will get 20 credits when Power Up is activated. 
+        </div>
+    </div>
+    
+    <div ng-show="{{drop.DropId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img2.wikia.nocookie.net/__cb20150206171743/callofduty/images/8/82/Security_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Security</h1>
+            </div>
+        </div>
+        <div class="description">
+            Droped by zombies. When activated, it will activate every trap on the map. Doors, laser, all off them.
+            <br>
+            If you picked up the Power Up. It will give you credits every time a zombie is getting hurt by the trap.
+            Other Players will not get the credits to. Only the person who pick it up will get the credits.
+            <br>
+            <br>
+            *Caution*The traps can kill you to.
+        </div>
+    </div>
+    
+    <div ng-show="{{drop.DropId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150206173014/callofduty/images/f/f6/Full_Reload_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Full Reload</h1>
+            </div>
+        </div>
+        <div class="description">
+            Droped by zombies. When activated it will give you max ammo.
+            <br>
+            <br>
+            *Note* it will not include the mag you have in your gun.
+            <br>
+            The Power Up will drop at the end of every Infected round or Dog round.
+        </div>
+    </div>
+    <div ng-show="{{drop.DropId==7}}">
+        <div class="game">
+            <div class="image">
+                <img src="http://img1.wikia.nocookie.net/__cb20150207183355/callofduty/images/e/e9/Resupply_AW.png" />
+            </div>
+            <div class="game-title">
+                <h1>Power Surge</h1>
+            </div>
+        </div>
+        <div class="description">
+            Droped by zombies. When activated, all the 3D Printers will be turned on and will also cost 10 Credits.
+        </div>
+    </div>
+    
+    
 </div>

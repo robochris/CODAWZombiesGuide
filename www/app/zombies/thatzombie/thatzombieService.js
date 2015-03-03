@@ -51,6 +51,14 @@
                 }
             ]
             }
+            if (ZombieId == 6) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "song",
+                }
+            ]
+            }
             
         }
     }
