@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="lib/angular-material/angular-material.css">
     <title>CODAW Zombie Guide</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="cordova.js"></script>
 
 </head>
 
-<body>
+<body onload="onLoad()">
     <div ui-view></div>
-
+    
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-ui-router/angular-ui-router.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
@@ -85,6 +86,24 @@
     
     <script src="app/weapons/thatWeaponC/weapon/weaponController.js"></script>
     <script src="app/weapons/thatWeaponC/weapon/weaponService.js"></script>
+    
+    
+    <script>    
+        function onLoad() {
+            if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
+                document.addEventListener('deviceready', initApp, false);
+            } else {
+                initApp();
+            }
+        }
+        
+        function initApp() {
+            if(window.AdMob) {
+                AdMob.createBanner( 'ca-app-pub-9314458948355399/6762084865' );
+            }
+        }
+    </script>
+    
     </body>
 
 </html>
