@@ -11,14 +11,14 @@
         return service;
 
         function GetEasterEgg() {
-            
-            return {
-                
-                    EasterEggId: 1,
-                    displayName: "Game Over, Man"
-                };
 
-            
+            return {
+
+                EasterEggId: 1,
+                displayName: "Game Over, Man"
+            };
+
+
         }
     }
 

@@ -4,7 +4,7 @@
     window.agApp.controller('thatDropController', Controller);
 
 
-    function Controller(thatDropService, $stateParams) {
+    function Controller(thatDropService, $stateParams, $scope) {
         var vm = this;
         vm.DropId = $stateParams.DropId;
         vm.drop = [];
@@ -12,8 +12,8 @@
         Activate();
 
         function Activate() {
-            $scope.mapMenu.selectedScreen = 'Power-Up';
             vm.drop = thatDropService.GetThatDrop(vm.DropId);
+            $scope.mapMenu.selectedScreen = 'Power-Up';
         }
     }
 

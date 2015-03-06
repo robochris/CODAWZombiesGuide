@@ -63,34 +63,34 @@
             } else if (mapId == 1) {
                 return [
                     {
-                        WeaponId: 1,
+                        WeaponId: 12,
                         displayName: "Atlas 45",
                 },
                     {
-                        WeaponId: 2,
+                        WeaponId: 13,
                         displayName: "Tac-19",
                 },
                     {
-                        WeaponId: 3,
+                        WeaponId: 14,
                         displayName: "Pytaek",
                 },
                     {
-                        WeaponId: 4,
+                        WeaponId: 15,
                         displayName: "HNRa3",
                 },
                     {
-                        WeaponId: 5,
+                        WeaponId: 16,
                         displayName: "SN6",
                 },
                     {
-                        WeaponId: 6,
+                        WeaponId: 17,
                         displayName: "ASM1",
                 },
                     {
-                        WeaponId: 7,
+                        WeaponId: 18,
                         displayName: "EM1",
                 },
-            
+
             ]
             }
         }

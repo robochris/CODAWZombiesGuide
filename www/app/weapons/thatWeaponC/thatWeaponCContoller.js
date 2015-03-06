@@ -4,15 +4,17 @@
     window.agApp.controller('thatWeaponCController', Controller);
 
 
-    function Controller(thatWeaponCService, $stateParams) {
+    function Controller(thatWeaponCService, $stateParams, $scope) {
         var vm = this;
-        vm.WeaponId= $stateParams.WeaponId;
-        vm.weapon = [];
-        
+        vm.WeaponId = $stateParams.WeaponId;
+        vm.weapons = [];
+
         Activate();
 
         function Activate() {
-            vm.weapon = thatWeaponCService.GetThatWeaponL(vm.WeaponId);
+
+            vm.weapons = thatWeaponCService.GetThatWeaponL(vm.WeaponId);
+            $scope.mapMenu.selectedScreen = 'Weapons';
         }
     }
 

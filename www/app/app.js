@@ -77,7 +77,7 @@
             parent: 'map-menu'
         });
         $stateProvider.state('storys', {
-            url: "/story",
+            url: "/story/{StoryId}",
             templateUrl: "app/story/story.html",
             parent: 'map-menu'
         });
@@ -114,6 +114,11 @@
         $stateProvider.state('weapon', {
             url: "/weapon/{WeaponId}",
             templateUrl: "app/weapons/thatWeaponC/thatWeaponC.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('weapont', {
+            url: "/weapont/{weapontId}",
+            templateUrl: "app/weapons/thatWeaponC/weapon/weapon.html",
             parent: 'map-menu'
         });
         $stateProvider.state('zombie', {

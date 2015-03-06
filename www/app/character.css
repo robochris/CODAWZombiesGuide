@@ -6,8 +6,15 @@
 }
 
 
+.title h1{
+    margin-top: 10px;
+    font-size: 18px;
+}
 
-
+.type{
+    margin-top: 10px;
+    font-size: 18px;
+}
 .stuff   {
     font-size: 18px;
     margin-left: 200px;

@@ -61,7 +61,7 @@
                     {
                         menuId: 11,
                         displayName: "Story",
-                        route: "storys",
+                        route: "storys({StoryId: 1})",
                     }
             ]
                 } else if (mapId == 1) {
@@ -84,7 +84,7 @@
                         {
                             menuId: 4,
                             displayName: "Story",
-                            route: "storys",
+                            route: "storys({StoryId: 2})",
                         },
                         {
                             menuId: 5,

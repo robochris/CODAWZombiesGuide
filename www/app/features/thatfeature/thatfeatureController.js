@@ -4,7 +4,7 @@
     window.agApp.controller('thatfeatureController', Controller);
 
 
-    function Controller(thatfeatureService, $stateParams, $scpoe) {
+    function Controller(thatfeatureService, $stateParams, $scope) {
         var vm = this;
         vm.FeatureId = $stateParams.FeatureId;
         vm.feature = [];
@@ -12,8 +12,8 @@
         Activate();
 
         function Activate() {
-            $scope.mapMenu.selectedScreen = 'Features';
             vm.feature = thatfeatureService.GetThatFeature(vm.FeatureId);
+            $scope.mapMenu.selectedScreen = 'Features';
         }
     }
 
