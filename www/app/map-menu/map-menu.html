@@ -5,7 +5,9 @@
     <div ng-if="mapMenu.menuOnly">
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <i ui-sref="map-list" class="fa fa-arrow-left" style="margin-right: 15px;"></i> 
+                <div style="padding: 15px;" ui-sref="map-list">
+                    <i class="fa fa-arrow-left"></i> 
+                </div>
                 <h1>{{mapMenu.theMap.displayName}}</h1>
             </div>
         </md-toolbar>
@@ -26,8 +28,8 @@
     <div ng-if="!mapMenu.menuOnly">
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <div ng-click="mapMenu.ToggleMenu()" style="padding: 10px;">
-                    <i class="fa fa-bars" style="margin-right: 15px;"></i>
+                <div ng-click="mapMenu.ToggleMenu()" style="padding: 15px;">
+                    <i class="fa fa-bars"></i>
                 </div>
                 <h2>{{mapMenu.selectedScreen}}</h1>
             </div>
