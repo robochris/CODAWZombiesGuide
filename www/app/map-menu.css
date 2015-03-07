@@ -1,3 +1,27 @@
+.toolbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  height: 64px;
+}
+
+.toolbar.headroom--unpinned {
+  transform: translateY(-64px);
+}
+
+.toolbar-clear {
+    margin-top: 64px;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
 .name {
     
 font-size: 35px;
@@ -20,6 +44,7 @@ font-size: 30px;
 
 .Home {
     color: black;
+    font-size: 29px;
 }
 .barname {
     

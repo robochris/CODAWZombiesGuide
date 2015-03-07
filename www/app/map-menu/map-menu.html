@@ -26,23 +26,25 @@
 
 
     <div ng-if="!mapMenu.menuOnly">
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <div ng-click="mapMenu.ToggleMenu()" style="padding: 15px;">
-                    <i class="fa fa-bars"></i>
+        <headroom class="toolbar">
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <div ng-click="mapMenu.ToggleMenu()" style="padding: 15px;">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <h2>{{mapMenu.selectedScreen}}</h1>
                 </div>
-                <h2>{{mapMenu.selectedScreen}}</h1>
-            </div>
-        </md-toolbar>
+            </md-toolbar>
+        </headroom>
 
-        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-sidenav class="sidenav md-sidenav-left md-whiteframe-z2" md-component-id="left">
             <md-toolbar>
                 <div class="md-toolbar-tools">
 
                 </div>
             </md-toolbar>
             <md-content class="md-padding">
-                <div class="Home" ui-sref="map-list"><i class="fa fa-home"> Back to Map List</i></div>
+                <div class="Home" ui-sref="map-list"><i class="fa fa-home"></i> Back to Map List</div>
                 <hr>
                 <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}" ng-click="mapMenu.ToggleMenu()">
                     <div class="description">
@@ -52,6 +54,8 @@
             </md-content>
         </md-sidenav>
 
-        <div ui-view></div>
+        <div class="toolbar-clear">
+            <div ui-view></div>
+        </div>
     </div>
 </div>

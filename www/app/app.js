@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    window.agApp = angular.module('agApp', ['ui.router', 'ngMaterial'])
+    window.agApp = angular.module('agApp', ['ui.router', 'ngMaterial', 'headroom'])
         .config(Config)
         .run(Run);
 
