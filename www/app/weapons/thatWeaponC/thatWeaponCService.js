@@ -90,7 +90,7 @@
             if (WeaponId == 4) {
                 return [
                     {
-                        weaponId: 17,
+                        weapontId: 17,
                         displayName: "Lynx",
                 }
             ]

@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="app/map-menu.css">
 
+
 <div ng-controller="MapMenuController as mapMenu">
 
     <div ng-if="mapMenu.menuOnly">
+        <headroom class="toolbar">
         <md-toolbar>
             <div class="md-toolbar-tools">
                 <div style="padding: 15px;" ui-sref="map-list">
@@ -11,7 +13,7 @@
                 <h1>{{mapMenu.theMap.displayName}}</h1>
             </div>
         </md-toolbar>
-
+        </headroom>
         <div class="fancyMenu">
             <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}">
                 <div class="description">
@@ -58,4 +60,5 @@
             <div ui-view></div>
         </div>
     </div>
+   
 </div>
