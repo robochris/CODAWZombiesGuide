@@ -1,10 +1,15 @@
 <div ng-controller="weaponsController as weapon">
+    <!-- categories -->
     <div ng-repeat="weapon in weapon.weapon" class="weapons" ui-sref="weapon({WeaponId: weapon.WeaponId})">
         <div class="description">
             <div class="name">{{weapon.displayName}}</div>
         </div>
-
     </div>
 
-
+    <!-- uncategorized weapons -->
+    <div ng-repeat="weapon in weapon.weapons" class="weapon" ui-sref="weapont({weapontId: weapon.weapontId})">
+        <div class="description">
+            <div class="name">{{weapon.displayName}}</div>
+        </div>
+    </div>
 </div>

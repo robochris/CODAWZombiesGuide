@@ -233,6 +233,39 @@
                 },
             ]
             }
+            // riot weapons
+            if (WeaponId == 12) {
+                return [
+                    {
+                        weapontId: 21,
+                        displayName: "Atlas 45",
+                },
+                    {
+                        weapontId: 15,
+                        displayName: "TAC-19",
+                },
+                    {
+                        weapontId: 20,
+                        displayName: "Pytack",
+                },
+                    {
+                        weapontId: 4,
+                        displayName: "HBRa3",
+                },
+                    {
+                        weapontId: 10,
+                        displayName: "SN6",
+                },
+                    {
+                        weapontId: 8,
+                        displayName: "ASM1",
+                },
+                    {
+                       weapontId: 18,
+                        displayName: "EM1",
+                },
+            ]
+            }
         }
     }
 })();
