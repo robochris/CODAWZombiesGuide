@@ -15,7 +15,7 @@
             return [
                 {
                     mapId: 1,
-                    displayName: "Riot(Exo-Survival)",
+                    displayName: "Riot (Exo-Survival)",
                     imageUrl: 'img/HomeRiot.png'
                 },
                 {

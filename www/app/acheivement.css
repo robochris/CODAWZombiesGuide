@@ -5,42 +5,32 @@
     padding: 5px;
     color: white;
 }
-
 .HTG {
     font-size: 25px;
     color: white;
 }
-
-
-
 .score p {
     margin-left: 108px;
     color: white;
 }
-
 .game-title p {
     font-size: 18px;
     margin-left: 108px;
     color: white;
 }
-
 .game-title h1 {
     font-size: 18px;
     margin-left: 108px;
     color: white;
 }
-
 .image img {
-    width: 100px;
-    
+    width: 100px;   
 }
-
 .game {
     border-bottom: 2px solid cyan;
     padding-bottom: 2px;
     min-height: 110px;
 }
-
 .game .image {
     position: absolute;
 }

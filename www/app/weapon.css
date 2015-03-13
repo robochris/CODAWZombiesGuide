@@ -4,34 +4,28 @@
     color: white;
     padding: 5px;
 }
-
 .info {
     font-size: 18px;
 }
-
 .game-title p {
     font-size: 18px;
     margin-left: 200px;
     color: white;
 }
-
 .game-title h1 {
     font-size: 24px;
     border-bottom: 2px solid cyan;
     padding: 10px;
 }
-
 .image img {
     width: 353px;
     height: 125px;
 }
-
 .game {
     border-bottom: 2px solid cyan;
     padding-bottom: 100px;
     min-height: 110px;
 }
-
 .imageA img {
     width: 225px;
     height: 125px;

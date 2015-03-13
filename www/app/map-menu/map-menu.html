@@ -5,14 +5,14 @@
 
     <div ng-if="mapMenu.menuOnly">
         <headroom class="toolbar">
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <div style="padding: 15px;" ui-sref="map-list">
-                    <i class="fa fa-arrow-left"></i> 
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <div style="padding: 15px;" ui-sref="map-list">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                    <h1>{{mapMenu.theMap.displayName}}</h1>
                 </div>
-                <h1>{{mapMenu.theMap.displayName}}</h1>
-            </div>
-        </md-toolbar>
+            </md-toolbar>
         </headroom>
         <div class="fancyMenu">
             <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}">

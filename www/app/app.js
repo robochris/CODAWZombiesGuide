@@ -86,6 +86,16 @@
             templateUrl: "app/EasterEggs/easterEggs.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('strategy', {
+            url: "/strategy/{StrategyId}",
+            templateUrl: "app/strategy/strategy.html",
+            parent: 'map-menu'
+        });
+        $stateProvider.state('tip', {
+            url: "/tip/{tipId}",
+            templateUrl: "app/tips/tips.html",
+            parent: 'map-menu'
+        });
         $stateProvider.state('character', {
             url: "/character/{CharacterId}",
             templateUrl: "app/character/thatCharacter/thatCharacter.html",

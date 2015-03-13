@@ -15,7 +15,7 @@
             return {
 
                 EasterEggId: 1,
-                displayName: "Game Over, Man"
+                displayName: "Game Over, Man(Easter Egg)"
             };
 
 

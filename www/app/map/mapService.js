@@ -15,7 +15,7 @@
                 return [
                     {
                         mapimgId: 1,
-                        imageUrl: "http://codifornia.com/wp-content/uploads/2015/01/Exo-Zombies-Outbreak-map.jpg"
+                        imageUrl: 'img/Outbreak.png'
                 }
             ]
             } else if (mapId == 1) {

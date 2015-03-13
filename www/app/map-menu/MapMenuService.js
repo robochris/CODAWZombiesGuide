@@ -62,7 +62,15 @@
                         menuId: 11,
                         displayName: "Story",
                         route: "storys({StoryId: 1})",
-                    }
+                    }, {
+                        menuId: 12,
+                        displayName: "Strategy",
+                        route: "strategy({StrategyId: 1})",
+                    }, {
+                        menuId: 13,
+                        displayName: "Tips",
+                        route: "tip({tipId: 1})",
+                    },
             ]
                 } else if (mapId == 1) {
                     return [

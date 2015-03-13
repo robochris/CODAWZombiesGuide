@@ -4,39 +4,30 @@
     color: white;
     padding: 5px;
 }
-
-
 .cost   {
     font-size: 18px;
     margin-left: 200px;
     color: white;
 }
-
 .credits   {
     font-size: 18px;
     margin-left: 200px;
     color: white;
 }
-
 .game-title h1 {
     font-size: 18px;
     margin-left: 200px;
     color: white;
 }
-
 .image img {
     width: 175px;
     height: 150px
 }
-
 .game {
     border-bottom: 2px solid cyan;
     padding-bottom: 100px;
     min-height: 110px;
-    
 }
-
 .game .image {
     position: absolute;
 }
-
