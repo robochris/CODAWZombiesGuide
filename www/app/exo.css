@@ -1,18 +1,15 @@
 .description {
     font-size: 25px;
     margin-bottom: 15px;
-    color: white;
     padding: 5px;
 }
 .cost   {
     font-size: 18px;
     margin-left: 200px;
-    color: white;
 }
 .game-title h1 {
     font-size: 18px;
     margin-left: 200px;
-    color: white;
 }
 .image img {
     width: 175px;

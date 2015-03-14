@@ -1,7 +1,6 @@
 .description {
     font-size: 25px;
     margin-bottom: 15px;
-    color: white;
     padding: 5px;
 }
 .title h1{
@@ -15,12 +14,10 @@
 .stuff   {
     font-size: 18px;
     margin-left: 200px;
-    color: white;
 }
 .game-title h1 {
     font-size: 18px;
     margin-left: 200px;
-    color: white;
 }
 .image img {
     width: 190px;

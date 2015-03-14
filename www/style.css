@@ -2,6 +2,7 @@ html,
 body {
     color: white;
     background-color: black;
+    font-family: 'Lato';
 }
 
 .mapimage img {

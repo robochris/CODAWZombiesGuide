@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="app/map-menu.css">
 
 
-<div ng-controller="MapMenuController as mapMenu">
+<div ng-controller="MapMenuController as mapMenu" style="margin-top: -1px; padding-top: 1px;">
 
     <div ng-if="mapMenu.menuOnly">
         <headroom class="toolbar">
             <md-toolbar>
-                <div class="md-toolbar-tools">
+                <div class="md-toolbar-tools" >
                     <div style="padding: 15px;" ui-sref="map-list">
                         <i class="fa fa-arrow-left"></i>
                     </div>
@@ -14,9 +14,9 @@
                 </div>
             </md-toolbar>
         </headroom>
-        <div class="fancyMenu">
+        <div class="fancyMenu" style="margin-top: 64px;">
             <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}">
-                <div class="description">
+                <div class="description" >
                     <div class="name">{{menuItem.displayName}}</div>
                 </div>
             </div>

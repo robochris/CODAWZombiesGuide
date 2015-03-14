@@ -19,12 +19,11 @@
     bottom: 0;
 }
 .name {
-    
-font-size: 35px;
-border-bottom: 3px solid cyan;
+    font-size: 35px;
+    border-bottom: 3px solid cyan;
     color: white;
     padding: 10px;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 .md-toolbar-tools h1{
 font-size: 30px;

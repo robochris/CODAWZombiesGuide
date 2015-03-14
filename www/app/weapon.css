@@ -1,7 +1,6 @@
 .description {
     font-size: 25px;
     margin-bottom: 15px;
-    color: white;
     padding: 5px;
 }
 .info {
@@ -10,7 +9,6 @@
 .game-title p {
     font-size: 18px;
     margin-left: 200px;
-    color: white;
 }
 .game-title h1 {
     font-size: 24px;

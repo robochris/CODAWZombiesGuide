@@ -75,14 +75,9 @@
                 } else if (mapId == 1) {
                     return [
                         {
-                            menuId: 1,
-                            displayName: "Achievements",
-                            route: "achievements",
-                        },
-                        {
-                            menuId: 2,
-                            displayName: "Weapons",
-                            route: "weapons",
+                            menuId: 5,
+                            displayName: "Map",
+                            route: "map",
                         },
                         {
                             menuId: 3,
@@ -90,15 +85,21 @@
                             route: "zombies",
                         },
                         {
+                            menuId: 2,
+                            displayName: "Weapons",
+                            route: "weapons",
+                        },
+                        {
+                            menuId: 1,
+                            displayName: "Achievements",
+                            route: "achievements",
+                        },
+                        {
                             menuId: 4,
                             displayName: "Story",
                             route: "storys({StoryId: 2})",
                         },
-                        {
-                            menuId: 5,
-                            displayName: "Map",
-                            route: "map",
-                        },
+                        
 
                 ]
 
