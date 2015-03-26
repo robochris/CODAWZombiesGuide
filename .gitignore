@@ -45,3 +45,13 @@ Temporary Items
 #phonegap stuff
 platforms/
 CODAWZombiesGuide.keystore
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/LICENSE
+*.xml
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/README.md
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/src/ios/YoikScreenOrientation.h
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/www/screenorientation.ios.js
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/www/screenorientation.bb10.js
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/src/ios/YoikScreenOrientation.m
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/www/screenorientation.android.js
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/www/screenorientation.js
+plugins/net.yoik.cordova.plugins.screenorientation/cordova-yoik-screenorientation-master/src/android/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.java

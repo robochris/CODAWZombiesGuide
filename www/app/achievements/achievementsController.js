@@ -1,9 +1,6 @@
 (function () {
     'use strict';
-
     window.agApp.controller('achievementsController', Controller);
-
-
     function Controller(achievementsService, $stateParams, $scope) {
         var vm = this;
         vm.achievements = [];
@@ -15,6 +12,4 @@
             vm.achievements = achievementsService.GetAchievements(vm.mapId);
         }
     }
-
-
 })();

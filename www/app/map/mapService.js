@@ -15,7 +15,7 @@
                 return [
                     {
                         mapimgId: 1,
-                        imageUrl: 'img/Outbreak.png'
+                        imageUrl: 'img/mapOutbreak.png'
                 }
             ]
             } else if (mapId == 1) {

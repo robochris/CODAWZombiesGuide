@@ -28,3 +28,10 @@
     width: 225px;
     height: 125px;
 }
+.Agame {
+    min-height: 110px;
+}
+.Bgame {
+    min-height: 110px;
+    border-bottom: 2px solid cyan;
+}

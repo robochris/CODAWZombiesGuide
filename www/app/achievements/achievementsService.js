@@ -9,7 +9,6 @@
         };
 
         return service;
-
         function GetAchievements(mapId) {
             if (mapId == 2) {
                 return [
@@ -53,8 +52,6 @@
                         AchievementId: 10,
                         displayName: "20/20",
                 },
-
-
             ]
             } else if (mapId == 1) {
                 return [
@@ -69,5 +66,4 @@
             }
         }
     }
-
 })();

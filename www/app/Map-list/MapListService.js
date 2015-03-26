@@ -22,7 +22,12 @@
                     mapId: 2,
                     displayName: "Outbreak",
                     imageUrl: 'img/HomeOutbreak.jpg'
-                }
+                },
+                {
+                    mapId: 3,
+                    displayName: "Infection",
+                    imageUrl: 'img/0.jpg'
+                },
 
             ]
         }
