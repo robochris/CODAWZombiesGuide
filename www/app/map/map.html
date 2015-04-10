@@ -1,7 +1,7 @@
 <div ng-controller="MapController as map">
-    <div ng-repeat="map in map.map" class="map">
-        <div class="mapimage">
-            <img ng-src={{map.imageUrl}} />
+    <div class="parent">
+        <div class="panzoom">
+            <img ng-src={{map.map.imageUrl}} />
         </div>
     </div>
 </div>
