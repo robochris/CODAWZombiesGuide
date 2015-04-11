@@ -16,8 +16,11 @@
             
             
             $timeout(function() {
-                var $panzoom = $('.panzoom')
+                var $panzoom = $('.panzoom-parent img')
                 .panzoom({
+                    contain: 'invert',
+                    minScale: 1,
+                    maxScale: 3,
                     startTransform: 'scale(1.3)'
                 })                
                 .panzoom('zoom', 1.0, {
