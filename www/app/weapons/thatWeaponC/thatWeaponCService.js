@@ -110,13 +110,11 @@
                         displayName: "Pytack",
                     }
                 ];
-                function WeaponId(mapId){
                 if (mapId == 3) {
                     weapons.push({
                         weapontId: 45,
                         displayName: "Magnetron",
                     });
-                }
                 }
                 return weapons;
                 
