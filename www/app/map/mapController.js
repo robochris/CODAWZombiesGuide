@@ -12,9 +12,7 @@
 
         function Activate() {
             vm.map = MapService.GetMap(vm.mapId);
-<<<<<<< HEAD
             $scope.mapMenu.selectedScreen = 'Map';
-=======
             
             
             $timeout(function() {
@@ -37,8 +35,6 @@
                     });
                 });
             });
-            
->>>>>>> origin/master
         }
     }
 
