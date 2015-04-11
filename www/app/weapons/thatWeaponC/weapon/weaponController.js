@@ -8,7 +8,7 @@
         var vm = this;
         vm.weapontId = $stateParams.weapontId;
         vm.weapont = [];
-
+        vm.mapId = $stateParams.mapId;
         Activate();
 
         function Activate() {

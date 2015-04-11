@@ -121,6 +121,11 @@
             templateUrl: "app/features/thatfeature/thatfeature.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('trap', {
+            url: "/trap/{TrapId}",
+            templateUrl: "app/features/thatfeature/feature/feature.html",
+            parent: 'map-menu'
+        });
         $stateProvider.state('weapon', {
             url: "/weapon/{WeaponId}",
             templateUrl: "app/weapons/thatWeaponC/thatWeaponC.html",

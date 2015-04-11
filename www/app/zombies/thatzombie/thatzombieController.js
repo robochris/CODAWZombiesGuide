@@ -8,7 +8,7 @@
         var vm = this;
         vm.ZombieId = $stateParams.ZombieId;
         vm.Zombie = [];
-
+        vm.mapId = $stateParams.mapId;
         Activate();
 
         function Activate() {

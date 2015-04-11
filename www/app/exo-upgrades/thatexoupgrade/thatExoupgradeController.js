@@ -7,6 +7,7 @@
     function Controller(thatExoupgradeService, $stateParams, $scope) {
         var vm = this;
         vm.ExoupgradeId = $stateParams.ExoupgradeId;
+        vm.mapId = $stateParams.mapId;
         vm.exoupgrade = [];
 
         Activate();

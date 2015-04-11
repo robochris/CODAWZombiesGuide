@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="app/exo.css">
+<link rel="stylesheet" href="app/CSS/exo.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <div ng-controller="thatExoupgradeController as Exo">
@@ -18,14 +18,19 @@
             Exo Soldier allows the player to shoot and reload while sprinting and sliding. It also increases weapon swap speed and hip fire accuracy. Exo Soldier is particularly useful in higher rounds, as it allows the player to reload while sprinting, which is useful when being chased by a massive horde of zombies.
             <br>
             <br>
+            <div ng-show="{{Exo.mapId == 2}}">
             On Outbreak, this upgrade is located in the Holding
+            </div>
+            <div ng-show="{{Exo.mapId == 3}}">
+            On Infection, this upgrade is located in the Value Voltage
+            </div>
         </div>
     </div>
     
     <div ng-show="{{Exo.ExoupgradeId==2}}">
         <div class="game">
             <div class="image">
-                <img src="img/Healthpng.png" />
+                <img src="img/Health.png" />
             </div>
             <div class="game-title">
                 <h1>Exo Health</h1>
@@ -38,7 +43,12 @@
             Exo Health increases the player's health. Which allows the player to take seven hits before being downed
             <br>
             <br>
+            <div ng-show="{{Exo.mapId == 2}}">
             On Outbreak, this upgrade is located in Holding.
+            </div>
+            <div ng-show="{{Exo.mapId == 3}}">
+            On Infection, this upgrade is located in the Burger Town
+            </div>
         </div>
     </div>
     
@@ -57,7 +67,13 @@
         <div class="description">
             Exo Reload's effect is most useful and noticeable on weapons with slow reload times, such as light machine guns and shotguns, but due to its high cost, it is ill-advised to purchase without Exo Health unless in dire need.
             <br>
-            <br> On Outbreak, this upgrade is located in the Morgue.
+            <br>
+            <div ng-show="{{Exo.mapId == 2}}">
+            On Outbreak, this upgrade is located in the Morgue.
+            </div>
+            <div ng-show="{{Exo.mapId == 3}}">
+            On Infection, this upgrade is located in the Sewers
+            </div>
         </div>
     </div>
     
@@ -79,7 +95,13 @@
             <br>
             To use, double jump then press B.
             <br>
+            <br>
+            <div ng-show="{{Exo.mapId == 2}}">
             In Outbreak, this upgrade is located in the Main Hub.
+            </div>
+            <div ng-show="{{Exo.mapId == 3}}">
+            On Infection, this upgrade is located in the Atlas Command
+            </div>
         </div>
     </div>
     

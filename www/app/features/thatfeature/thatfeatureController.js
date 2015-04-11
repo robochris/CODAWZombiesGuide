@@ -8,7 +8,7 @@
         var vm = this;
         vm.FeatureId = $stateParams.FeatureId;
         vm.feature = [];
-
+        vm.mapId = $stateParams.mapId;
         Activate();
 
         function Activate() {

@@ -47,6 +47,27 @@
                         displayName: "Angie",
                 }
             ]
+            } else if (CharacterId == 6) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "Survivors",
+                }
+            ]
+            } else if (CharacterId == 7) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "Eagle One",
+                }
+            ]
+            } else if (CharacterId == 8) {
+                return [
+                    {
+                        Id: 1,
+                        displayName: "Sentinel Leader",
+                }
+            ]
             }
 
 

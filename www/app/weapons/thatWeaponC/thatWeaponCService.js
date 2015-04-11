@@ -10,7 +10,7 @@
 
         return service;
 
-        function GetThatWeaponL(WeaponId) {
+        function GetThatWeaponL(WeaponId,mapId) {
             if (WeaponId == 1) {
                 return [
                     {
@@ -96,20 +96,30 @@
             ]
             }
             if (WeaponId == 5) {
-                return [
+                var weapons = [
                     {
                         weapontId: 18,
                         displayName: "EM1",
-                },
+                    },
                     {
                         weapontId: 19,
                         displayName: "Ameli",
-                },
+                    },
                     {
                         weapontId: 20,
                         displayName: "Pytack",
-                },
-            ]
+                    }
+                ];
+                function WeaponId(mapId){
+                if (mapId == 3) {
+                    weapons.push({
+                        weapontId: 45,
+                        displayName: "Magnetron",
+                    });
+                }
+                }
+                return weapons;
+                
             }
             if (WeaponId == 6) {
                 return [

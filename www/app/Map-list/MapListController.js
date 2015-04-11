@@ -16,7 +16,6 @@
         }
         
         function MapClicked(map) {
-            //map.mapId
         }
     }
 

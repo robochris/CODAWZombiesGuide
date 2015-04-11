@@ -8,11 +8,13 @@
         var vm = this;
         vm.EasterEggId = $stateParams.EasterEggId;
         vm.easteregg = null;
+        vm.mapId = $stateParams.mapId;
+
 
         Activate();
 
         function Activate() {
-            vm.easteregg = easterEggsService.GetEasterEgg();
+            vm.easteregg = easterEggsService.GetEasterEgg(vm.mapId);
             $scope.mapMenu.selectedScreen = vm.easteregg.displayName;
         }
     }

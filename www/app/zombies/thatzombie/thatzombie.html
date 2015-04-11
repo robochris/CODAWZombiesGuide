@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="app/zombie.css">
+<link rel="stylesheet" href="app/CSS/zombie.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -6,7 +6,7 @@
     <div ng-show="{{zombie.ZombieId==1}}">
         <div class="game">
             <div class="image">
-                <img src="http://cdn.segmentnext.com/wp-content/uploads/2015/01/Exo-Zombies.jpg" />
+                <img src="img/RegZob.png" />
             </div>
             <div class="game-title">
                 <h1>Exo zombies</h1>
@@ -22,7 +22,7 @@
     <div ng-show="{{zombie.ZombieId==2}}">
         <div class="game">
             <div class="image">
-                <img src="img/host.png">
+                <img src="img/Host.png">
             </div>
 
             <div class="game-title">
@@ -36,7 +36,10 @@
             <br>
             <br> Once the last zombie of the Hosts round is killed, it will drop a Full Reload power-up, and any infected player will be cured without needing to go to the Decontamination Zone. When the player kills a Host, it will explode and leak out green fluid.
             <br>
-            <br> When it is a Host round, Angie will give the player(s) a warning over the intercom. "Attention, Security has been breached" signifying the Hosts are coming.
+            <br>
+            <div ng-show="{{zombie.mapId==2}}">
+                When it is a Host round, Angie will give the player(s) a warning over the intercom. "Attention, Security has been breached" signifying the Hosts are coming.
+            </div>
         </div>
     </div>
 
@@ -50,67 +53,128 @@
             </div>
         </div>
         <div class="description">
-            As suggested by their name, as well as being mentioned by Kahn, they are dogs that were used by the security and were zombified.
-            <br>
-            <br> Security Dogs, like Hellhounds, appear during special rounds (the announcer will say it in the beginning of the round). The dogs will come out of their kennels[2] and attack the players. When the last one is killed, it will drop a Full Reload power-up.
-            <br>
-            <br> Dogs can spawn either as regular ones, or as special ones that behave like EMZs and whose attacks will disable the player's exo. There is also a type of dog that behaves like Exploders.
-            <br>
-            <br> While rather weak opponents, they deal the same damage per attack as regular zombies and are faster, which can make them dangerous, especially the EMZ-like ones.
-        </div>
-        </div>
-
-        <div ng-show="{{zombie.ZombieId==4}}">
-            <div class="game">
-                <div class="image">
-                    <img src="img/charger.jpg" />
-                </div>
-                <div class="game-title">
-                    <h1>Chargers</h1>
-                </div>
-            </div>
-            <div class="description">
-                Chargers appear randomly during rounds. They can be easily noticed by the red mist coming out their eyes, mouth and body.
+            <div ng-show="{{zombie.mapId == 2}}">
+                As suggested by their name, as well as being mentioned by Kahn, they are dogs that were used by the security and were zombified.
                 <br>
-                <br> Chargers are faster than normal zombies. They run faster and tend more regularly to use their exosuit to jump towards the player and attack them. Should the player's health be at a low level, chargers can be dangerous, as they can easily reach a player and hit them.
+                <br> Security Dogs appear during special rounds (the announcer will say it in the beginning of the round). The dogs will come out of their kennels and attack the players. When the last one is killed, it will drop a Full Reload power-up.
+                <br>
+                <br> Dogs can spawn either as regular ones, or as special ones that behave like EMZs and whose attacks will disable the player's exo. There is also a type of dog that behaves like Exploders.
+                <br>
+                <br> While rather weak opponents, they deal the same damage per attack as regular zombies and are faster, which can make them dangerous, especially the EMZ-like ones.
+            </div>
+            <div ng-show="{{zombie.mapId == 3}}">
+                As suggested by their name, as well as being mentioned by Kahn, they are dogs that were used by the security and were zombified.
+                <br>
+                <br> Security Dogs appear during special rounds with some human zombies. The dogs will come out and attack the players. When the last zombie is killed, it will drop a Full Reload power-up.
+                <br>
+                <br> Dogs can spawn either as regular ones, or as special ones that behave like EMZs and whose attacks will disable the player's exo. There is also a type of dog that behaves like Exploders.
+                <br>
+                <br> While rather weak opponents, they deal the same damage per attack as regular zombies and are faster, which can make them dangerous, especially the EMZ-like ones. Dogs usually start on round 5.
             </div>
         </div>
-
-        <div ng-show="{{zombie.ZombieId==5}}">
-            <div class="game">
-                <div class="image">
-                    <img src="http://www.uagna.it/wp-content/uploads/2015/01/zombie_emp_aw.jpg" />
-                </div>
-                <div class="game-title">
-                    <h1>EMZs</h1>
-                </div>
-            </div>
-            <div class="description">
-                EMZs have exosuits, and can be easily distinguished from other zombies by electricity on their body. They seem to spawn after round 4.
-                <br>
-                <br> When a player is hit by the EMZ or if a player attempts to boost away from one, it will produce an EMP, shutting down the player's exo. The exosuit is disabled for five seconds, and during these five seconds, the player will not be able to use any exosuit ability. Their view will also be blurred, similarly to the System Hack effects. When an EMZ dies the dead corpse will leak out a blue fluid of some sort, possibly the electricity it has been exposed to. It is best to kill an EMZ once spotted, as disabling exosuits can be problematic in higher rounds, as it prevents the player from using it to quickly escape.
-            </div>
-        </div>
-
-
-        <div ng-show="{{zombie.ZombieId==6}}">
-            <div class="game">
-                <div class="image">
-                    <img src="img/exploder.png" />
-                </div>
-                <div class="game-title">
-                    <h1>Exploders</h1>
-                </div>
-            </div>
-            <div class="description">
-                Exploders can be distinguished from regular zombies by green liquid around their body and on fire. They spawn during regular rounds, and can spawn as soon as round 1.
-                <br>
-                <br>
-                When approached, the Exploder will, as its name indicates, explode. The explosion deals small damage to nearby players but will one-hit kill nearby zombies. If the player does not kill an Exploder for a period of time, it will charge up and when killed the blast radius will increase and possibly hurt or in rare cases down any player in the vicinity
-            </div>
-        </div>
-
-
     </div>
 
-    
+    <div ng-show="{{zombie.ZombieId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Charger.png" />
+            </div>
+            <div class="game-title">
+                <h1>Chargers</h1>
+            </div>
+        </div>
+        <div class="description">
+            Chargers appear randomly during rounds. They can be easily noticed by the red mist coming out their eyes, mouth and body.
+            <br>
+            <br> Chargers are faster than normal zombies. They run faster and tend more regularly to use their exosuit to jump towards the player and attack them. Should the player's health be at a low level, chargers can be dangerous, as they can easily reach a player and hit them.
+        </div>
+    </div>
+
+    <div ng-show="{{zombie.ZombieId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/EMZ.png" />
+            </div>
+            <div class="game-title">
+                <h1>EMZs</h1>
+            </div>
+        </div>
+        <div class="description">
+            EMZs have exosuits, and can be easily distinguished from other zombies by electricity on their body. They seem to spawn after round 4.
+            <br>
+            <br> When a player is hit by the EMZ or if a player attempts to boost away from one, it will produce an EMP, shutting down the player's exo. The exosuit is disabled for five seconds, and during these five seconds, the player will not be able to use any exosuit ability. Their view will also be blurred. When an EMZ dies the dead corpse will leak out a blue fluid of some sort, possibly the electricity it has been exposed to. It is best to kill an EMZ once spotted, as disabling exosuits can be problematic in higher rounds, as it prevents the player from using it to quickly escape.
+        </div>
+    </div>
+
+
+    <div ng-show="{{zombie.ZombieId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Exploder.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exploders</h1>
+            </div>
+        </div>
+        <div class="description">
+            Exploders can be distinguished from regular zombies by green liquid around their body and on fire. They spawn during regular rounds, and can spawn as soon as round 1.
+            <br>
+            <br> When approached, the Exploder will, as its name indicates, explode. The explosion deals small damage to nearby players but will one-hit kill nearby zombies. If the player does not kill an Exploder for a period of time, it will charge up and when killed the blast radius will increase and possibly hurt or in rare cases down any player in the vicinity
+        </div>
+    </div>
+
+    <div ng-show="{{zombie.ZombieId==7}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Spiker.png" />
+            </div>
+            <div class="game-title">
+                <h1>Spikers</h1>
+            </div>
+        </div>
+        <div class="description">
+            Spikers are similar to Chargers, but they have spikes surrounding its body.
+            <br>The spikes act like armour so they are tougher to kill.
+            <br>
+            <br>Don't get near them because the spikes do hurt you when the zombie touches you.
+            <br>
+            <br> When killed, they will spread spikes around it. Which the Spikes will damage players as well as zombies close to the Spiker.
+            <br>So try killing them far away.
+        </div>
+    </div>
+
+    <div ng-show="{{zombie.ZombieId==8}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Acid.png" />
+            </div>
+            <div class="game-title">
+                <h1>Acid Drippers</h1>
+            </div>
+        </div>
+        <div class="description">
+            Acid Drippers,or Ozzers, can be noticed by acid that flows from their body. Oozers will spawn along with regular zombies as soon as round 5.
+            <br>
+            <br> Oozers constantly drop puddles of acid to the ground. Walking over these will damage the player.
+            <br>
+            <br> So its recommended to kill them as soon as the spawn because the longer they live the more puddles of acid there will be.
+        </div>
+    </div>
+    <div ng-show="{{zombie.ZombieId==9}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/goliath.jpg" />
+            </div>
+            <div class="game-title">
+                <h1>Goliath Exo Zombie</h1>
+            </div>
+        </div>
+        <div class="description">
+            The Goliath Zombie is heavily mutated and bloated into a large set of muscle in a goliath suit. It carries a huge riot shield and a makeshift hammer as its weapon made out of a drain cover with a concrete arm attached into it.
+            <br>
+            <br> The Goliath appears every 10 rounds, and will spawn with other types Zombies. Once killed, it will drop a Full Reload.
+            <br>
+            <br>The Goliath is extremely dangerous when faced alone or with another companion, since only two hits will be enough to kill a player. Fighting the zombie with multiple teammates is the best option to quickly take it down. It can activate an EMP when approached, which will shut the player's exo down. It can fire heat-seeking missiles that will cause an EMP when detonated as well.
+        </div>
+    </div>
+</div>

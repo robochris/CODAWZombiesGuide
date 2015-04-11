@@ -1,25 +1,26 @@
 (function () {
-    'use strict';
+        'use strict';
 
-    window.agApp.service('easterEggsService', Service);
+        window.agApp.service('easterEggsService', Service);
 
-    function Service() {
-        var service = {
-            GetEasterEgg: GetEasterEgg
-        };
-
-        return service;
-
-        function GetEasterEgg() {
-
-            return {
-
-                EasterEggId: 1,
-                displayName: "Game Over, Man"
+        function Service() {
+            var service = {
+                GetEasterEgg: GetEasterEgg
             };
 
+            return service;
 
+            function GetEasterEgg(mapId) {
+                if (mapId == 3){
+            return {
+                displayName: "MEAT IS MURDER"
+            }
+        } else if (mapId == 2) {
+            return {
+                EasterEggId: 1,
+                displayName: "Game Over, Man"
+            }
         }
     }
-
+}
 })();

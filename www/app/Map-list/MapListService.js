@@ -16,17 +16,17 @@
                 {
                     mapId: 1,
                     displayName: "Riot (Exo-Survival)",
-                    imageUrl: 'img/HomeRiot.png'
+                    imageUrl: 'img/RiotHome.png'
                 },
                 {
                     mapId: 2,
                     displayName: "Outbreak",
-                    imageUrl: 'img/HomeOutbreak.jpg'
+                    imageUrl: 'img/Outbreakmap.jpg'
                 },
                 {
                     mapId: 3,
                     displayName: "Infection",
-                    imageUrl: 'img/0.jpg'
+                    imageUrl: 'img/InfectionHomeMap.jpg'
                 },
 
             ]

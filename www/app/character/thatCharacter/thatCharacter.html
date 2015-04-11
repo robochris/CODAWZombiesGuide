@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="app/character.css">
+<link rel="stylesheet" href="app/CSS/character.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <div ng-controller="thatCharacterController as character">
@@ -99,6 +99,59 @@
         </div>
         <div class="description">
             She is the Exo Zombies equivalent of the Demonic Announcer. She announces to the players when a power-up is picked up, when a round of Hosts or Security Dogs spawn, when a 3D Printer breaks, when a door is opened, and when a Power Switch is activated. She also converses with the characters when they talk to her.
+        </div>
+    </div>
+    
+    <div ng-show="{{character.CharacterId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/SurvivorHuman.png" />
+            </div>
+            <div class="game-title">
+                <h1>Survivors</h1>
+            </div>
+            <div class="stuff1">
+                Sex:Male
+            </div>
+        </div>
+        <div class="description">
+            The player has the opportunity to escort them to Eagle One's Warbird, where the survivor(s) will be extracted. This will grant the players an upgrade for their weapons. If a Survivor is highlighted in red, they are about to die; if the player fails to save one, all power on the map will be shut down for 60 seconds, and the power switches will have to be manually turned on again afterwards.
+            <br>
+            <br> When you turn the power switches back on, you dont get credits.
+        </div>
+    </div>
+    
+    <div ng-show="{{character.CharacterId==7}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Warbird.png" />
+            </div>
+            <div class="game-title">
+                <h1>Eagle One</h1>
+            </div>
+            <div class="stuff1">
+                Sex:Male
+            </div>
+        </div>
+        <div class="description">
+            Eagle One is the callsign of a Warbird. He tasks the players with escorting Survivors to his Warbird. When the survivors reach the extraction point, Eagle One will arrive, gunning down zombies in the area, and will extract the survivors using a rope. He regularly contacts the players, first at the beginning of the game where he calls another helicopter to extract the team, and during the game where he will randomly detect and locate survivors in the area.
+        </div>
+    </div>
+    
+    <div ng-show="{{character.CharacterId==8}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/leader.png" />
+            </div>
+            <div class="game-title">
+                <h1>Sentinel Leader</h1>
+            </div>
+            <div class="stuff1">
+                 Sex:Male
+            </div>
+        </div>
+        <div class="description">
+            He has been keeping track of four Atlas employees - Oz, Lilith Swann, Jim Decker and Kahn - for an unknown amount of time, possibly before their attempt to survive the outbreak at the Atlas research facility. When the four of them were brought back to an Atlas facility near a Burger Town restaurant, the Leader continued to monitor them, up to the point where they recovered and fought the undead forces in Burger Town. The Leader and his Sentinel troops then went in and saved them from a zombie horde, but held them at gunpoint. Upon meeting the survivors, he claimed that one of them "has to go".
         </div>
     </div>
 </div>

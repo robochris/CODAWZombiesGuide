@@ -14,48 +14,38 @@
             if (ZombieId == 1) {
                 return [
                     {
-                        Id: 1,
-                        displayName: "song",
+                       
                 }
             ]
             }
             if (ZombieId == 2) {
                 return [
                     {
-                        Id: 1,
-                        displayName: "song",
+                        
                 }
             ]
             }
             if (ZombieId == 3) {
                 return [
-                    {
-                        Id: 1,
-                        displayName: "song",
+                    {                        
                 }
             ]
             }
             if (ZombieId == 4) {
                 return [
                     {
-                        Id: 1,
-                        displayName: "song",
                 }
             ]
             }
             if (ZombieId == 5) {
                 return [
                     {
-                        Id: 1,
-                        displayName: "song",
                 }
             ]
             }
             if (ZombieId == 6) {
                 return [
                     {
-                        Id: 1,
-                        displayName: "song",
                 }
             ]
             }

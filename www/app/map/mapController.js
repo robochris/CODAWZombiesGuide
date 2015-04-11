@@ -11,8 +11,8 @@
         Activate();
 
         function Activate() {
-            $scope.mapMenu.selectedScreen = 'Map';
             vm.map = MapService.GetMap(vm.mapId);
+            $scope.mapMenu.selectedScreen = 'Map';
         }
     }
 

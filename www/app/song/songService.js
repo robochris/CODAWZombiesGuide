@@ -15,6 +15,10 @@
                     SongId: 1,
                     displayName: "Ride of the Valkyries",
                 };
+            return {
+                SongId:2,
+                displayName:"Toccata and Fugue in D minor" 
+            };
                 
 
             

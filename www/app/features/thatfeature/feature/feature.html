@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="app/CSS/features.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<div ng-controller="featureController as feature">
+    <div ng-show="{{feature.TrapId==1}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Gator.png" />
+            </div>
+            <div class="game-title">
+                <h1>Insta Gator</h1>
+            </div>
+            <div class="info">
+                Where:The Pit
+                <br>
+                <br> Cost:500
+            </div>
+        </div>
+        <div class="description">
+            It summons a alligator that will swim around the pit and devour any zombie that wonders around the water, instantly killing them.
+            <br>
+            <br> It only kills one zombie at a time.
+            <br>
+            <br>Make sure the power switch is on.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.TrapId==2}}">
+        <div class="game">
+            <div class="image">
+                <img src="" />
+            </div>
+            <div class="game-title">
+                <h1>Orbital Strike</h1>
+            </div>
+            <div class="info">
+                Where:Burger Town
+                <br>
+                <br> Cost:500
+            </div>
+        </div>
+        <div class="description">
+            The Orbital Strike launches missiles to the round killing the zombies in its radius. Red markers appear where a missile is about to hit.
+            <br>
+            <br>It has a 60 second cooldown before it can be used again. Make sure the power switch is on.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.TrapId==3}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Electrified.png" />
+            </div>
+            <div class="game-title">
+                <h1>Electrified Floor</h1>
+            </div>
+            <div class="info">
+                Where:Starting area
+                <br>
+                <br> Cost:500
+            </div>
+        </div>
+        <div class="description">
+            The floor of the Hoard More will become electrified dealing damage to zombies in the area but not the player. It will produce an EMP to players that are in the room when activated.
+            <br>
+            <br>Make sure the power switch is on.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.TrapId==4}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Sniper.png" />
+            </div>
+            <div class="game-title">
+                <h1>Automated Snipers</h1>
+            </div>
+            <div class="info">
+                Where:Atlas Command
+                <br>
+                <br> Cost:500
+            </div>
+        </div>
+        <div class="description">
+            Two automated snipers located on the towers in the area will activate, and will shoot at the zombies in the area.
+            <br>
+            <br>Make sure the power switch is on.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.TrapId==5}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Camo" />
+            </div>
+            <div class="game-title">
+                <h1>Camouflage Spray</h1>
+            </div>
+            <div class="info">
+                Where:Sewers
+                <br>
+                <br> Cost:500
+            </div>
+        </div>
+        <div class="description">
+            It will emit smoke giving you camouflage for a short period of time
+            <br>
+            <br>Make sure the power switch is on.
+        </div>
+    </div>
+
+    <div ng-show="{{feature.TrapId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="" />
+            </div>
+            <div class="game-title">
+                <h1>Ambulance</h1>
+            </div>
+            <div class="info">
+                Where:Value Voltage
+                <br>
+                <br>Cost:500
+            </div>
+        </div>
+        <div class="description">
+            It will trigger the ambulance's siren, that will attract zombies in the area and it will last for 15 seconds.
+            <br>
+            <br>Make sure the power switch is on.
+        </div>
+    </div>
+</div>

@@ -17,6 +17,9 @@
             }, {
                 StoryId: 2,
                 displayName: "Story"
+            },{
+                StoryId: 3,
+                displayName: "Story"
             };
 
 

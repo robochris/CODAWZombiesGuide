@@ -12,7 +12,7 @@
 
         // actually get categories
         function GetWeapons(mapId) {
-            if (mapId == 2) {
+            if (mapId == 2 || mapId == 3) {
                 return [
                     {
                         WeaponId: 1,

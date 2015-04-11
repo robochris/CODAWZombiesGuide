@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="app/weapon.css">
+<link rel="stylesheet" href="app/CSS/weapon.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <div ng-controller="weaponController as weapon">
@@ -740,7 +740,7 @@
     <div ng-show="{{weapon.weapontId==38}}">
         <div class="Bgame">
             <div class="image">
-                <img src="img/contact.jpg" />
+                <img src="img/contacts.png" />
             </div>
             <div class="game-title">
                 <h1>Contact Grenades</h1>
@@ -862,6 +862,30 @@
         </div>
         <div class="description">
             The knife is available as the standard melee weapon at the start of each match in Exo Zombies. One hit kill on round 1
+        </div>
+    </div>
+    
+    <div ng-show="{{weapon.weapontId==45}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/magnetron.png" />
+            </div>
+            <div class="game-title">
+                <h1>Magnetron</h1>
+            </div>
+            <div class="info">
+                Where:3D Printer
+                <br>Cost:1000 Credits
+                <br>Magazine Size:100%
+                <br>Maximum Ammunition:100%
+            </div>
+        </div>
+        <div class="description">
+            The Magnetron fires a continuous beam of directed energy that will cause zombies to explode when killed.
+            <br>
+            <br> Magnetron can overheat, you can see this on the bottom right corner. when the weapon is close to overheat, sounds will be heard and the player will have to cool the battery down.
+            <br>
+            <br>This gun is needed for part of the easter egg.
         </div>
     </div>
 </div>
