@@ -22,7 +22,7 @@
 
         $stateProvider.state('map-list', {
             url: "/map-list",
-            templateUrl: "app/Map-list/map-list.html"
+            templateUrl: "app/map-list/map-list.html"
         });
 
         $stateProvider.state('map-menu', {
@@ -48,7 +48,7 @@
         });
         $stateProvider.state('exoupgrades', {
             url: "/exo-upgrades",
-            templateUrl: "app/exo-upgrades/exoUpgrade.html",
+            templateUrl: "app/exo-upgrades/exo-upgrade.html",
             parent: 'map-menu'
         });
         $stateProvider.state('characters', {
@@ -83,7 +83,7 @@
         });
         $stateProvider.state('eastereggs', {
             url: "/eastereggs/{EasterEggId}",
-            templateUrl: "app/EasterEggs/easterEggs.html",
+            templateUrl: "app/easter-eggs/easter-eggs.html",
             parent: 'map-menu'
         });
         $stateProvider.state('strategy', {
@@ -98,47 +98,47 @@
         });
         $stateProvider.state('character', {
             url: "/character/{CharacterId}",
-            templateUrl: "app/character/thatCharacter/thatCharacter.html",
+            templateUrl: "app/character/that-character/that-character.html",
             parent: 'map-menu'
         });
         $stateProvider.state('achievement', {
             url: "/achievement/{AchievementId}",
-            templateUrl: "app/achievements/thatAchievement/thatAchievement.html",
+            templateUrl: "app/achievements/that-achievement/that-achievement.html",
             parent: 'map-menu'
         });
         $stateProvider.state('drop', {
             url: "/drop/{DropId}",
-            templateUrl: "app/drops/thatDrop/thatDrop.html",
+            templateUrl: "app/drops/that-drop/that-drop.html",
             parent: 'map-menu'
         });
         $stateProvider.state('exoupgrade', {
             url: "/exo-upgrade/{ExoupgradeId}",
-            templateUrl: "app/exo-upgrades/thatexoupgrade/thatexoupgrade.html",
+            templateUrl: "app/exo-upgrades/that-exo-upgrade/that-exo-upgrade.html",
             parent: 'map-menu'
         });
         $stateProvider.state('feature', {
             url: "/feature/{FeatureId}",
-            templateUrl: "app/features/thatfeature/thatfeature.html",
+            templateUrl: "app/features/that-feature/that-feature.html",
             parent: 'map-menu'
         });
         $stateProvider.state('trap', {
             url: "/trap/{TrapId}",
-            templateUrl: "app/features/thatfeature/feature/feature.html",
+            templateUrl: "app/features/that-feature/feature/feature.html",
             parent: 'map-menu'
         });
         $stateProvider.state('weapon', {
             url: "/weapon/{WeaponId}",
-            templateUrl: "app/weapons/thatWeaponC/thatWeaponC.html",
+            templateUrl: "app/weapons/that-weapon-c/that-weapon-c.html",
             parent: 'map-menu'
         });
         $stateProvider.state('weapont', {
             url: "/weapont/{weapontId}",
-            templateUrl: "app/weapons/thatWeaponC/weapon/weapon.html",
+            templateUrl: "app/weapons/that-weapon-c/weapon/weapon.html",
             parent: 'map-menu'
         });
         $stateProvider.state('zombie', {
             url: "/zombie/{ZombieId}",
-            templateUrl: "app/zombies/thatzombie/thatzombie.html",
+            templateUrl: "app/zombies/that-zombie/that-zombie.html",
             parent: 'map-menu'
         });
     }
