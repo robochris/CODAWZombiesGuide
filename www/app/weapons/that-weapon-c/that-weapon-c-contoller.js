@@ -13,7 +13,7 @@
 
         function Activate() {
 
-            vm.weapons = thatWeaponCService.GetThatWeaponL(vm.WeaponId);
+            vm.weapons = thatWeaponCService.GetThatWeaponL(vm.WeaponId,vm.mapId);
             $scope.mapMenu.selectedScreen = 'Weapons';
         }
     }

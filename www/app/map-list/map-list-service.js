@@ -26,7 +26,7 @@
                 {
                     mapId: 3,
                     displayName: "Infection",
-                    imageUrl: 'img/InfectionHomeMap.jpg'
+                    imageUrl: 'img/InfectionHomeMap.JPG'
                 },
 
             ]
