@@ -11,14 +11,6 @@
         return service;
 
         function GetTip() {
-
-            return {
-
-                tipId: 1,
-                displayName: "hi"
-            };
-
-
         }
     }
 

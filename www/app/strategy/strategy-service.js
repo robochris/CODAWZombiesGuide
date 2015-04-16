@@ -13,7 +13,6 @@
         function GetStrategy() {
 
             return {
-
                 StrategyId: 1,
                 displayName: "Game Over, Man"
             };

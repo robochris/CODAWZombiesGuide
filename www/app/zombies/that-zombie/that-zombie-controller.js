@@ -16,6 +16,4 @@
             vm.Zombie = thatzombieService.GetThatZombie(vm.ZombieId);
         }
     }
-
-
 })();

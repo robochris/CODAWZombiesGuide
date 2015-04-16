@@ -43,15 +43,15 @@
     },
     "installed_plugins": {
         "com.google.cordova.admob": {
-            "PACKAGE_NAME": "com.robochris.CODAWZombiesGuide"
+            "PACKAGE_NAME": "com.robochris.AWZombiesGuide"
         }
     },
     "dependent_plugins": {
         "com.rjfun.cordova.extension": {
-            "PACKAGE_NAME": "com.robochris.CODAWZombiesGuide"
+            "PACKAGE_NAME": "com.robochris.AWZombiesGuide"
         },
         "com.google.playservices": {
-            "PACKAGE_NAME": "com.robochris.CODAWZombiesGuide"
+            "PACKAGE_NAME": "com.robochris.AWZombiesGuide"
         }
     }
 }

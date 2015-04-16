@@ -117,7 +117,6 @@
                     });
                 }
                 return weapons;
-                
             }
             if (WeaponId == 6) {
                 return [

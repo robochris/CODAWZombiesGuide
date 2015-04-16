@@ -15,6 +15,4 @@
             vm.zombies = ZombiesService.GetZombies(vm.mapId);
         }
     }
-
-
 })();

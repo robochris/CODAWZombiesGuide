@@ -32,7 +32,6 @@
                     ExoupgradeId: 5,
                     displayName: "Exo-Medic",
                 },
-
             ]
         }
     }

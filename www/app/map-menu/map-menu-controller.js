@@ -12,12 +12,8 @@
         vm.theMap = MapListService.GetMap(vm.mapId);
         vm.ToggleMenu = ToggleMenu;
         vm.selectedScreen = 'dork';
-        
-        
-        
         Activate();
 
-        
         function Activate() {
             vm.menuItems = MapMenuService.GetMenuItems(vm.mapId);
             
