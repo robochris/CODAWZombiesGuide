@@ -15,9 +15,7 @@
             vm.maps = MapListService.GetMaps();
         }
         
-        function MapClicked(map) {
+        function MapClicked(map) {   
         }
     }
-
-
 })();
