@@ -7,19 +7,19 @@
         <headroom class="toolbar">
             <md-toolbar>
                 <div class="md-toolbar-tools" >
-                    <div style="padding: 15px;" ui-sref="map-list">
+                    <md-button style="padding: 15px;" class="toolbar-button" ui-sref="map-list">
                         <i class="fa fa-arrow-left"></i>
-                    </div>
+                    </md-button>
                     <h1>{{mapMenu.theMap.displayName}}</h1>
                 </div>
             </md-toolbar>
         </headroom>
         <div class="fancyMenu" style="margin-top: 64px;">
-            <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}">
+            <md-button ng-repeat="menuItem in mapMenu.menuItems" class="menu-button" ui-sref="{{menuItem.route}}">
                 <div class="description" >
                     <div class="name">{{menuItem.displayName}}</div>
                 </div>
-            </div>
+            </md-button>
         </div>
     </div>
 
@@ -27,9 +27,9 @@
         <headroom class="toolbar">
             <md-toolbar>
                 <div class="md-toolbar-tools">
-                    <div ng-click="mapMenu.ToggleMenu()" style="padding: 15px;">
+                    <md-button ng-click="mapMenu.ToggleMenu()" class="toolbar-button" style="padding: 15px;">
                         <i class="fa fa-bars"></i>
-                    </div>
+                    </md-button>
                     <h2>{{mapMenu.selectedScreen}}</h1>
                 </div>
             </md-toolbar>
@@ -42,13 +42,13 @@
                 </div>
             </md-toolbar>
             <md-content class="md-padding">
-                <div class="Home" ui-sref="map-list"><i class="fa fa-home"></i> Back to Map List</div>
+                <md-button class="Home" class="menu-button" style="color: black;"ui-sref="map-list"><i class="fa fa-home"></i> Back to Map List</md-button>
                 <hr>
-                <div ng-repeat="menuItem in mapMenu.menuItems" class="menuItem" ui-sref="{{menuItem.route}}" ng-click="mapMenu.ToggleMenu()">
+                <md-button ng-repeat="menuItem in mapMenu.menuItems" class="menu-button" ui-sref="{{menuItem.route}}" ng-click="mapMenu.ToggleMenu()">
                     <div class="description">
                         <div class="barname">{{menuItem.displayName}}</div>
                     </div>
-                </div>
+                </md-button>
             </md-content>
         </md-sidenav>
 

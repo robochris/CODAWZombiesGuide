@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <div ng-controller="achievementsController as achievements">
-    <div ng-repeat="achievement in achievements.achievements" class="achievement" ui-sref="achievement({AchievementId: achievement.AchievementId})">
+    <md-button ng-repeat="achievement in achievements.achievements" class="menu-button" ui-sref="achievement({AchievementId: achievement.AchievementId})">
         <div class="description">
             <div class="name">{{achievement.displayName}}</div>
         </div>
-    </div>
+    </md-button>
 </div>

@@ -1,8 +1,7 @@
 <div ng-controller="ZombiesController as zombies">
-    <div ng-repeat="zombie in zombies.zombies" class="zombies" ui-sref="zombie({ZombieId: zombie.ZombieId})">
+    <md-button ng-repeat="zombie in zombies.zombies" class="menu-button" ui-sref="zombie({ZombieId: zombie.ZombieId})">
         <div class="description">
             <div class="name">{{zombie.displayName}}</div>
         </div>
-        
-    </div>
+    </md-button>
 </div>
