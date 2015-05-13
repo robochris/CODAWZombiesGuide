@@ -1,15 +1,15 @@
 <div ng-controller="weaponsController as weapon">
     <!-- categories -->
-    <md-button ng-repeat="weapon in weapon.weapon" class="menu-button" ui-sref="weapon({WeaponId: weapon.WeaponId})">
+    <div ng-repeat="weapon in weapon.weapon" class="weapons" ui-sref="weapon({WeaponId: weapon.WeaponId})">
         <div class="description">
             <div class="name">{{weapon.displayName}}</div>
         </div>
-    </md-button>
+    </div>
 
     <!-- uncategorized weapons -->
-    <md-button ng-repeat="weapon in weapon.weapons" class="menu-button" ui-sref="weapont({weapontId: weapon.weapontId})">
+    <div ng-repeat="weapon in weapon.weapons" class="weapon" ui-sref="weapont({weapontId: weapon.weapontId})">
         <div class="description">
             <div class="name">{{weapon.displayName}}</div>
         </div>
-    </md-button>
+    </div>
 </div>

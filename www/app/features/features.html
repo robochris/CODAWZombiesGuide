@@ -1,7 +1,7 @@
 <div ng-controller="featuresController as features">
-    <md-button ng-repeat="feature in features.features" class="menu-button" ui-sref="feature({FeatureId: feature.FeatureId})">
+    <div ng-repeat="feature in features.features" class="feature" ui-sref="feature({FeatureId: feature.FeatureId})">
         <div class="description">
             <div class="name">{{feature.displayName}}</div>
         </div>
-    </md-button>
+    </div>
 </div>

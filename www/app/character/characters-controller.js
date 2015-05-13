@@ -11,8 +11,8 @@
         Activate();
 
         function Activate() {
-            vm.character = charactersService.GetCharacters(vm.mapId);
             $scope.mapMenu.selectedScreen = 'Characters';
+            vm.character = charactersService.GetCharacters(vm.mapId);
         }
     }
 

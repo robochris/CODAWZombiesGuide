@@ -1,8 +1,8 @@
 <div ng-controller="charactersController as characters">
-    <md-button ng-repeat="character in characters.character" class="menu-button" ui-sref="character({CharacterId: character.CharacterId})">
+    <div ng-repeat="character in characters.character" class="characters" ui-sref="character({CharacterId: character.CharacterId})">
         <div class="description">
             <div class="name">{{character.displayName}}</div>
         </div>
-    </md-button>
+    </div>
     <div ui-view></div>
 </div>

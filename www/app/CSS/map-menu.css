@@ -30,19 +30,19 @@
     font-size: 28px;
 }
 
+.Home {
+    color: black;
+    font-size: 29px;
+}
+
 .barname {
     font-size: 35px;
+    border-bottom: 3px solid cyan;
     color: black;
     padding: 10px;
     margin: 0 auto;
 }
-.toolbar-button{
-    display: block;
-    text-align: left;
-    font-size: 25px;
-    text-transform: none;
-    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif; 
-}
+
 .menu-button {
     display: block;
     width: 100%;

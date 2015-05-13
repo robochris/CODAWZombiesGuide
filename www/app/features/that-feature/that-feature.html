@@ -2,11 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <div ng-controller="thatfeatureController as feature">
-    <md-button ng-repeat="feature in feature.feature" class="menu-button" ui-sref="trap({TrapId: feature.TrapId})">
+    <div ng-repeat="feature in feature.feature" class="weapon" ui-sref="trap({TrapId: feature.TrapId})">
         <div class="description">
             <div class="name">{{feature.displayName}}</div>
         </div>
-    </md-button>
+    </div>
 
     <div ng-show="{{feature.FeatureId==1}}">
         <div class="game">
