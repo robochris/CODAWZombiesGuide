@@ -43,10 +43,6 @@
     text-transform: none;
     font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif; 
 }
-.Home {
-    color: black;
-    font-size: 29px;
-}
 .menu-button {
     display: block;
     width: 100%;
