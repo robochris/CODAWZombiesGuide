@@ -1,5 +1,5 @@
 <div ng-controller="exoUpgradeController as exoupgrades">
-    <md-button ng-repeat="exoupgrade in exoupgrades.exoupgrades" class="menu-button" ui-sref="exoupgrade({ExoupgradeId: exoupgrade.ExoupgradeId})">
+    <div ng-repeat="exoupgrade in exoupgrades.exoupgrades" class="exoupgrade" ui-sref="exoupgrade({ExoupgradeId: exoupgrade.ExoupgradeId})">
         <div class="description">
             <div class="name">{{exoupgrade.displayName}}</div>
         </div>
