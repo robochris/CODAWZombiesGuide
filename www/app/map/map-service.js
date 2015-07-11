@@ -11,6 +11,11 @@
         return service;
 
         function GetMap(mapId) {
+            if (mapId == 4) {
+                return {
+                    imageUrl: "img/CarrierMap.png"
+                }
+            }
             if (mapId == 3) {
                 return {
                     imageUrl: "img/Infectionmap.png"

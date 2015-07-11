@@ -27,6 +27,10 @@
                     mapId: 3,
                     displayName: "Infection",
                     imageUrl: 'img/InfectionHomeMap.JPG'
+                },{
+                    mapId: 4,
+                    displayName: "Carrier",
+                    imageUrl: 'img/CarrierHome.png'
                 },
 
             ]

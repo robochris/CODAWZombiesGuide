@@ -10,29 +10,59 @@
 
         return service;
 
-        function GetExoUpgrades() {
-            return [
-                {
-                    ExoupgradeId: 1,
-                    displayName: "Exo-Soldier",
+        function GetExoUpgrades(mapId) {
+            if (mapId == 2 || mapId == 3) {
+                return [
+                    {
+                        ExoupgradeId: 1,
+                        displayName: "Exo-Soldier",
                 },
-                {
-                    ExoupgradeId: 2,
-                    displayName: "Exo-Health",
+                    {
+                        ExoupgradeId: 2,
+                        displayName: "Exo-Health",
                 },
-                {
-                    ExoupgradeId: 3,
-                    displayName: "Exo-Reload",
+                    {
+                        ExoupgradeId: 3,
+                        displayName: "Exo-Reload",
                 },
-                {
-                    ExoupgradeId: 4,
-                    displayName: "Exo-Slam",
+                    {
+                        ExoupgradeId: 4,
+                        displayName: "Exo-Slam",
                 },
-                {
-                    ExoupgradeId: 5,
-                    displayName: "Exo-Medic",
+                    {
+                        ExoupgradeId: 5,
+                        displayName: "Exo-Medic",
                 },
             ]
+            }
+            if (mapId == 4) {
+                return [
+                    {
+                        ExoupgradeId: 1,
+                        displayName: "Exo-Soldier",
+                },
+                    {
+                        ExoupgradeId: 2,
+                        displayName: "Exo-Health",
+                },
+                    {
+                        ExoupgradeId: 3,
+                        displayName: "Exo-Reload",
+                },
+                    {
+                        ExoupgradeId: 4,
+                        displayName: "Exo-Slam",
+                },
+                    {
+                        ExoupgradeId: 5,
+                        displayName: "Exo-Medic",
+                },
+                    {
+                        ExoupgradeId: 6,
+                        displayName: "Exo-Stockpile",
+                },
+            ]
+            }
         }
     }
 

@@ -11,7 +11,41 @@
         return service;
 
         function GetAchievements(mapId) {
-            if (mapId == 3) {
+            if (mapId == 4) {
+                return [
+                    {
+                        AchievementId: 23,
+                        displayName: "Ensign",
+                },{
+                        AchievementId: 24,
+                        displayName: "Admiral",
+                },{
+                        AchievementId: 25,
+                        displayName: "Slot Jockey",
+                },{
+                        AchievementId: 26,
+                        displayName: "Right of First Defusal",
+                },{
+                        AchievementId: 27,
+                        displayName: "Take Off, Hoser!",
+                },{
+                        AchievementId: 28,
+                        displayName: "Telefragathon",
+                },{
+                        AchievementId: 29,
+                        displayName: "How Low Can You Go?",
+                },{
+                        AchievementId: 30,
+                        displayName: "Hugs!",
+                },{
+                        AchievementId: 31,
+                        displayName: "Mad Hops",
+                },{
+                        AchievementId: 32,
+                        displayName: "Flotsam & Jetsam",
+                }
+                ]
+            } else if (mapId == 3) {
                 return [
                     {
                         AchievementId: 13,

@@ -24,6 +24,9 @@
             <div ng-show="{{Exo.mapId == 3}}">
             On Infection, this upgrade is located in the Value Voltage
             </div>
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in the ---
+            </div>
         </div>
     </div>
     
@@ -49,6 +52,9 @@
             <div ng-show="{{Exo.mapId == 3}}">
             On Infection, this upgrade is located in the Burger Town
             </div>
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in the ---
+            </div>
         </div>
     </div>
     
@@ -73,6 +79,9 @@
             </div>
             <div ng-show="{{Exo.mapId == 3}}">
             On Infection, this upgrade is located in the Sewers
+            </div>
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in the ---
             </div>
         </div>
     </div>
@@ -102,6 +111,9 @@
             <div ng-show="{{Exo.mapId == 3}}">
             On Infection, this upgrade is located in the Atlas Command
             </div>
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in the ---
+            </div>
         </div>
     </div>
     
@@ -125,7 +137,37 @@
             <br>
              When the player is downed, they will be equipped with their handgun (Atlas 45 if the player doesn't have one) while they are down and will be revived shortly after. The zombies will move away from the player while they are being revived. It can be bought only three times before becoming unavailable for the rest of the game.
             If the player has a different pistol or the CEL-3 Cauterizer, they will use that when they are down. 
-            
+            <div ng-show="{{Exo.mapId == 2}}">
+            In Outbreak, this upgrade is located in the Main Hub.
+            </div>
+            <div ng-show="{{Exo.mapId == 3}}">
+            On Infection, this upgrade is located in the Atlas Command
+            </div>
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in the ---
+            </div>
+        </div>
+    </div>
+    
+    <div ng-show="{{Exo.ExoupgradeId==6}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Stockpile.png" />
+            </div>
+            <div class="game-title">
+                <h1>Exo Stockpile</h1>
+            </div>
+            <div class="cost">
+                <p>Cost:2000 </p>
+            </div>
+        </div>
+        <div class="description"> 
+            Exo Stockpile increases the amount of ammo or grenades you can have. The ammo increases by 20% and grenades increases by one Grenade.
+            <br>
+            <br> It also increases the amount of grenades received per round.
+            <div ng-show="{{Exo.mapId == 4}}">
+            On Carrier, this upgrade is located in Med Bay.
+            </div>
         </div>
     </div>
 </div>

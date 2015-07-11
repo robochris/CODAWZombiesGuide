@@ -21,7 +21,7 @@
 
     <div ng-show="{{zombie.ZombieId==2}}">
         <div class="game">
-            <div class="image">
+            <div class="imageA">
                 <img src="img/host.png">
             </div>
 
@@ -163,7 +163,7 @@
     <div ng-show="{{zombie.ZombieId==9}}">
         <div class="game">
             <div class="image">
-                <img src="img/goliath.jpg" />
+                <img src="img/goliath.png" />
             </div>
             <div class="game-title">
                 <h1>Goliath Exo Zombie</h1>
@@ -175,6 +175,40 @@
             <br> The Goliath appears every 10 rounds, and will spawn with other types Zombies. Once killed, it will drop a Full Reload.
             <br>
             <br>The Goliath is extremely dangerous when faced alone or with another companion, since only two hits will be enough to kill a player. Fighting the zombie with multiple teammates is the best option to quickly take it down. It can activate an EMP when approached, which will shut the player's exo down. It can fire heat-seeking missiles that will cause an EMP when detonated as well.
+        </div>
+    </div>
+    <div ng-show="{{zombie.ZombieId==10}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Teleport.png" />
+            </div>
+            <div class="game-title">
+                <h1>Teleporting Zombies</h1>
+            </div>
+        </div>
+        <div class="description">
+            Teleporting Zombies teleport to the player in short distances. They are wearing blue exo suit which makes them teleport.
+            <br>
+            <br>Its best to shoot them fast so you dont get trapped when they teleport to you.
+            <br>
+            <br>The Teleporting Zombies are used for the easter egg to collect the teleport grenade like things.
+        </div>
+    </div>
+    <div ng-show="{{zombie.ZombieId==11}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Atlas.png" />
+            </div>
+            <div class="game-title">
+                <h1>Atlas Strike Team</h1>
+            </div>
+        </div>
+        <div class="description">
+            The Atlas Strike Team spawns when there is a gas bomb. They teleport in and try to defend the bomb from the players.
+            <br>
+            <br>All the Atlas Soldiers have Camouflage, so zombies can't attack them. When they die, they sometimes drop a Camouflage that will last for 10 seconds.
+            <br>
+            <br>Some Atlas Soldiers have Shields and a ohm. The rest just have an ohm. After round 20 a Goliath will start spawning everytime a gas bomb spawns.
         </div>
     </div>
 </div>

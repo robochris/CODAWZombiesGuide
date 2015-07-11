@@ -1,27 +1,31 @@
 (function () {
-    'use strict';
+        'use strict';
 
-    window.agApp.service('songsService', Service);
+        window.agApp.service('songsService', Service);
 
-    function Service() {
-        var service = {
-            GetSongs: GetSongs
-        };
+        function Service() {
+            var service = {
+                GetSongs: GetSongs
+            };
 
-        return service;
+            return service;
 
-        function GetSongs() {
-            return {
+            function GetSongs() {
+                return {
                     SongId: 1,
                     displayName: "Ride of the Valkyries",
-                };
-            return {
-                SongId:2,
-                displayName:"Toccata and Fugue in D minor" 
-            };
                 
 
-            
+                SongId: 2,
+                    displayName: "Toccata and Fugue in D minor",
+                    
+                    SongId: 3,
+                    displayName: "Song"
+            };
+
+
+
+
         }
     }
 

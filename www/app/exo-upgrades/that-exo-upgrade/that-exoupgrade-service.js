@@ -35,7 +35,13 @@
                 }
             ]
             }
-            if (ExoupgradeId == 4) {
+            if (ExoupgradeId == 5) {
+                return [
+                    {
+                }
+            ]
+            }
+            if (ExoupgradeId == 6) {
                 return [
                     {
                 }

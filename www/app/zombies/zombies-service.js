@@ -11,6 +11,35 @@
         return service;
 
         function GetZombies(mapId) {
+            if (mapId == 4) {
+                return [
+                {
+                        ZombieId: 1,
+                        displayName: "Regular Zombies",
+                },{
+                        ZombieId: 2,
+                        displayName: "Hosts",
+                },{
+                        ZombieId: 3,
+                        displayName: "Security Dogs",
+                },{
+                        ZombieId: 5,
+                        displayName: "EMZs",
+                },{
+                        ZombieId: 6,
+                        displayName: "Exploders",
+                },{
+                        ZombieId: 7,
+                        displayName: "Spikers",
+                },{
+                        ZombieId: 10,
+                        displayName: "Teleporting Zombies",
+                },{
+                        ZombieId: 11,
+                        displayName: "Atlas strike team",
+                },   
+                ]
+            }
             if (mapId == 3) {
                 return [
                 {

@@ -25,10 +25,8 @@
             <br>
             <br> Features Include:
             <br> -All Perks
-            <div ng-show="{{feature.mapId==2}}">
                 -Exo suits
-            </div>
-            <div ng-show="{{feature.mapId==3}}">
+            <div ng-show="{{feature.mapId==3 || feature.mapId==4}}">
                 -Traps
             </div>
         </div>
@@ -47,7 +45,7 @@
             </div>
         </div>
         <div class="description">
-            Upgrades are permanent, meaning one can get rid of an upgraded gun and then buy it again off the wall or from the 3D Printer but without needing to start over with all the upgrades. Players to upgrade their weapons a maximum of 19 times per weapon up to Mk20. A secret experimental Upgrade Station can be unlocked by completing the "Game Over, Man" which will allow players to upgrade one more time to Mk25. Each time the player upgrades the gun, it will replenish ammo, gain a new camouflage, and get increased stats. In specific Mk levels, a new attachment may be added or maximum ammunition may be increased.
+            Upgrades are permanent, meaning one can get rid of an upgraded gun and then buy it again off the wall or from the 3D Printer but without needing to start over with all the upgrades. Players can upgrade their weapons a maximum of 19 times per weapon up to Mk20. A secret experimental Upgrade Station can be unlocked by completing a certain part in the easter which will allow players to upgrade one more time to Mk25. Each time the player upgrades the gun, it will replenish ammo, gain a new skin, and get increased stats. In specific Mk levels, a new attachment may be added or maximum ammunition may be increased.
             <br>
             <div ng-show="{{feature.mapId==2}}">
                 There are three Upgrade Stations on Outbreak. The first two are located in the Morgue and in the Administration, and the last one is found in the Exo Testing room after completing "Game Over, Man".
@@ -69,12 +67,15 @@
             <div ng-show="{{feature.mapId==2}}">
                 Most of them will land in the starting area, although some may appear in the Exo suits Room after it has been opened.
             </div>
-            A player can stack a maximum of three Care Package items. It will contain one of the four following items:
+            A player can stack a maximum of three Care Package items. It will contain the following items:
             <br>
             <br> -A Remote Sentry with the Rip able module, and possibly the Rocket Turret module or the Directed Energy module.
             <br> -A Aerial Assault Drone with the AI Control module and possibly the Rockets module.
             <br> -The Camouflage bonus.
             <br> -Credits. The amount of credits the player will gain will be randomized each time, ranging from 100 to 1000.
+            <div ng-show="{{feature.mapId==4}}">
+                -Sentinel Reinforcements can defuse the bomb, revive players or kill zombies and atlas soldiers.
+            </div>
             <br>
             <br> *Note* When you pick a credit package while multiplier is on. You will get twice the number you would have had.
         </div>
@@ -100,6 +101,9 @@
             </div>
             <div ng-show="{{feature.mapId==3}}">
                 Located in The Pit
+            </div>
+            <div ng-show="{{feature.mapId==4}}">
+                Located in the Med bay and Moon Pool.
             </div>
         </div>
     </div>
@@ -137,6 +141,14 @@
                 <br>Burger Town: In the main lobby of the restaurant.
                 <br>Value Voltage: Inside the store, across from an Upgrade Station.
             </div>
+            <!--<div ng-show="{{feature.mapId==4}}">
+                Locations are:
+                <br>---
+                <br>---
+                <br>---
+                <br>---
+                <br>---
+            </div>-->
             <br>
             <br> View the Weapons to see what weapons are in the 3D Printer
         </div>
@@ -184,7 +196,7 @@
 
     <div ng-show="{{feature.FeatureId==7}}">
         <div class="game">
-            <div class="image">
+            <div class="imageA">
                 <img src="img/ATM.png" />
             </div>
             <div class="game-title">
@@ -198,6 +210,103 @@
             ATM's will give the player 100 credits each time they are used. Dispensers will be randomly activated during the game; any active one can be identified by its green screen. They will sometimes malfunction and start shooting out money. Range of 500 to about 1000 credits.
             <br>
             <br> *Note* When multiplier is on, the ATM will give you 200 credits.
+        </div>
+    </div>
+    <div ng-show="{{feature.FeatureId==9}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Desposal.png" />
+            </div>
+            <div class="game-title">
+                <h1>Grenade Disposal Machine</h1>
+            </div>
+        </div>
+        <div class="description">
+            When you throw a grenade into the Grenade Disposal, the grenade will bounce off pegs like a Pachinko game, and land on a slot that will reward the player with either 100, 200, 300, 400, 500, 750, or 1000 credits.
+            <br>
+            <br>Grenade Disposal is loacted in the Armory
+        </div>
+    </div>
+    <div ng-show="{{feature.FeatureId==10}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Weapon.png" />
+            </div>
+            <div class="game-title">
+                <h1>Weapon Disposal Machine</h1>
+            </div>
+            <div class="cost">
+                Cost:Weapon
+            </div>
+        </div>
+        <div class="description">
+            The Weapon Disposal Machine has a arm sticking out of a slot. When you hold X, the player will give its current weapon to the hand.
+            <br>
+            <br> The hand can give you these items:
+            <br>-Credits
+            <br>-C4
+            <br>-Parts to the fishing rod
+            <br>-bottle of alcohol
+            <br>
+            <br>Weapon Disposal is loacted in the Armory
+            <br>
+            <br>To turn on the machine, you have to do step -- in the easter egg
+        </div>
+    </div>
+    <div ng-show="{{feature.FeatureId==11}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Fishpole.png" />
+            </div>
+            <div class="game-title">
+                <h1>Fishing Pole</h1>
+            </div>
+            <div class="cost">
+                Cost:100 credits
+            </div>
+        </div>
+        <div class="description">
+            The Fishing Rod is a buildable. You have to get 3 parts(the reel, fishing line, and hook). Wants you have placed all of the parts in the Gun Deck. It will cost 100 credits to use it.
+            <br>
+            <br>You can get these items from the fishing rod:
+            <br>
+            <br>-Junk
+            <br>-Red Fish
+            <br>-Shovel
+            <br>-Ammo bags
+            <br>-Credits
+        </div>
+    </div>
+    <div ng-show="{{feature.FeatureId==12}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Teleporter.png"/>
+            </div>
+            <div class="game-title">
+                <h1>Teleporter</h1>
+            </div>
+            <div class="cost">
+                Cost:100 credits
+            </div>
+        </div>
+        <div class="description">
+            The Teleporter will teleport the player to different locations.
+        </div>
+    </div>
+    <div ng-show="{{feature.FeatureId==13}}">
+        <div class="game">
+            <div class="image">
+                <img src="img/Chompy.png"/>
+            </div>
+            <div class="game-title">
+                <h1>Chompy</h1>
+            </div>
+            <div class="cost">
+                Cost:500 credits
+            </div>
+        </div>
+        <div class="description">
+            Chompy is a robot that has sharp teeth that rotate killing zombies that gets in its way. Chompy is located in the cargo room and will circle around the room when activated. Chompy will sometimes activate by itself. Players and zombies can climb on Chompy. The zombies can still hurt you even when you are on him.
         </div>
     </div>
 </div>

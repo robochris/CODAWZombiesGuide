@@ -10,7 +10,7 @@
 
         return service;
 
-        function GetThatWeaponL(WeaponId,mapId) {
+        function GetThatWeaponL(WeaponId, mapId) {
             if (WeaponId == 1) {
                 return [
                     {
@@ -116,6 +116,17 @@
                         displayName: "Magnetron",
                     });
                 }
+                if (mapId == 4) {
+                    weapons.push({
+                        weapontId: 46,
+                        displayName: "Ohm",
+                    });
+                
+                    weapons.push({
+                        weapontId: 48,
+                        displayName: "LZ-52 Limbo",
+                    });
+                }
                 return weapons;
             }
             if (WeaponId == 6) {
@@ -143,7 +154,7 @@
             ]
             }
             if (WeaponId == 8) {
-                return [
+                var weapons = [
                     {
                         weapontId: 25,
                         displayName: "Crossbow",
@@ -153,7 +164,14 @@
                         displayName: "Ripped Turret",
                 },
 
-            ]
+            ];
+                if (mapId == 4) {
+                    weapons.push({
+                        weapontId: 47,
+                        displayName: "M1 irons",
+                    });
+                }
+                return weapons;
             }
             if (WeaponId == 9) {
                 return [
@@ -201,28 +219,40 @@
             ]
             }
             if (WeaponId == 10) {
-                return [
+                var weapons = [
                     {
                         weapontId: 37,
                         displayName: "Frag Grenades",
-                },
+                    },
                     {
                         weapontId: 38,
                         displayName: "Contact Grendades",
-                },
+                    },
                     {
                         weapontId: 39,
                         displayName: "Nano Swarm",
-                },
+                    },
                     {
                         weapontId: 40,
                         displayName: "Distraction Drone",
-                },
+                    },
                     {
                         weapontId: 41,
                         displayName: "Explosive Drone",
-                },
-            ]
+                    }
+                ];
+                if (mapId == 4) {
+                    weapons.push({
+                        weapontId: 49,
+                        displayName: "Teleport Grenades",
+                    });
+
+                    weapons.push({
+                        weapontId: 50,
+                        displayName: "Repulse Grenades",
+                    });
+                }
+                return weapons;
             }
             if (WeaponId == 11) {
                 return [
@@ -268,7 +298,7 @@
                         displayName: "ASM1",
                 },
                     {
-                       weapontId: 18,
+                        weapontId: 18,
                         displayName: "EM1",
                 },
             ]

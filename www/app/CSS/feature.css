@@ -26,3 +26,10 @@
 .game .image {
     position: absolute;
 }
+.game .imageA {
+    position: absolute;
+}
+.imageA img {
+    width: 175px;
+    height: 205px
+}

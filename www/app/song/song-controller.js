@@ -12,7 +12,7 @@
         Activate();
 
         function Activate() {
-            vm.songs = songsService.GetSongs();
+            vm.songs = songsService.GetSongs(vm.SongId);
             $scope.mapMenu.selectedScreen = vm.songs.displayName;
         }
     }

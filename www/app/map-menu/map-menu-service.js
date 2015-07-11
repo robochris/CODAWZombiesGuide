@@ -14,7 +14,64 @@
         return service;
 
         function GetMenuItems(mapId) {
-            if (mapId == 3) {
+            if (mapId == 4) {
+                return [
+                    {
+                        menuId: 1,
+                        displayName: "Map",
+                        route: "map",
+                    }, {
+                        menuId: 2,
+                        displayName: "Zombies",
+                        route: "zombies",
+                    }, {
+                        menuId: 3,
+                        displayName: "Weapons",
+                        route: "weapons",
+                    }, {
+                        menuId: 4,
+                        displayName: "Exo-Upgrades",
+                        route: "exoupgrades",
+                    }, {
+                        menuId: 5,
+                        displayName: "Features",
+                        route: "features",
+                    }, {
+                        menuId: 6,
+                        displayName: "Characters",
+                        route: "characters",
+                    }, {
+                        menuId: 7,
+                        displayName: "Power-Ups",
+                        route: "drops",
+                    }, {
+                        menuId: 8,
+                        displayName: "The Planets Op.32 Mars, the Bringer of War",
+                        route: "songs({SongId: 3})",
+                    }, {
+                        menuId: 9,
+                        displayName: "Flotsam & Jetsam",
+                        route: "eastereggs({EasterEggId: 3})",
+                    }, {
+                        menuId: 10,
+                        displayName: "Achievements",
+                        route: "achievements",
+                    },
+                    {
+                        menuId: 11,
+                        displayName: "Story",
+                        route: "storys({StoryId: 4})",
+                    }, {
+                        menuId: 12,
+                        displayName: "Strategy",
+                        route: "strategy({StrategyId: 3})",
+                    }, {
+                        menuId: 13,
+                        displayName: "Tips",
+                        route: "tip({tipId: 3})",
+                    }
+                ]
+            } else if (mapId == 3) {
                 return [
                     {
                         menuId: 1,
