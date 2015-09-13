@@ -4,16 +4,14 @@
     window.agApp.controller('thatCharacterController', Controller);
 
 
-    function Controller(thatCharacterService, $stateParams,$scope) {
+    function Controller( $stateParams,$scope) {
         var vm = this;
         vm.CharacterId = $stateParams.CharacterId;
-        vm.character = [];
 
         Activate();
 
         function Activate() {
             $scope.mapMenu.selectedScreen = 'Characters';
-            vm.character = thatCharacterService.GetThatCharacter(vm.CharacterId);
         }
     }
 

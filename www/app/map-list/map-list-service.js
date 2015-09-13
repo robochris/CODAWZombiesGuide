@@ -31,6 +31,10 @@
                     mapId: 4,
                     displayName: "Carrier",
                     imageUrl: 'img/CarrierHome.png'
+                },{
+                    mapId: 5,
+                    displayName: "Descent",
+                    imageUrl: 'img/DescentHome.png'
                 },
 
             ]

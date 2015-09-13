@@ -141,6 +141,11 @@
             templateUrl: "app/zombies/that-zombie/that-zombie.html",
             parent: 'map-menu'
         });
+        $stateProvider.state('oz', {
+            url: "/oz",
+            templateUrl: "app/oz-room/oz-room.html",
+            parent: 'map-menu'
+        });
     }
 
     function Run() {

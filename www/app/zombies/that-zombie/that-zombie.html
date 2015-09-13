@@ -53,7 +53,6 @@
             </div>
         </div>
         <div class="description">
-            <div ng-show="{{zombie.mapId == 2}}">
                 As suggested by their name, as well as being mentioned by Kahn, they are dogs that were used by the security and were zombified.
                 <br>
                 <br> Security Dogs appear during special rounds (the announcer will say it in the beginning of the round). The dogs will come out of their kennels and attack the players. When the last one is killed, it will drop a Full Reload power-up.
@@ -61,16 +60,6 @@
                 <br> Dogs can spawn either as regular ones, or as special ones that behave like EMZs and whose attacks will disable the player's exo. There is also a type of dog that behaves like Exploders.
                 <br>
                 <br> While rather weak opponents, they deal the same damage per attack as regular zombies and are faster, which can make them dangerous, especially the EMZ-like ones.
-            </div>
-            <div ng-show="{{zombie.mapId == 3}}">
-                As suggested by their name, as well as being mentioned by Kahn, they are dogs that were used by the security and were zombified.
-                <br>
-                <br> Security Dogs appear during special rounds with some human zombies. The dogs will come out and attack the players. When the last zombie is killed, it will drop a Full Reload power-up.
-                <br>
-                <br> Dogs can spawn either as regular ones, or as special ones that behave like EMZs and whose attacks will disable the player's exo. There is also a type of dog that behaves like Exploders.
-                <br>
-                <br> While rather weak opponents, they deal the same damage per attack as regular zombies and are faster, which can make them dangerous, especially the EMZ-like ones. Dogs usually start on round 5.
-            </div>
         </div>
     </div>
 
@@ -183,7 +172,7 @@
                 <img src="img/Teleport.png" />
             </div>
             <div class="game-title">
-                <h1>Teleporting Zombies</h1>
+                <h1>Blinkers</h1>
             </div>
         </div>
         <div class="description">
@@ -209,6 +198,29 @@
             <br>All the Atlas Soldiers have Camouflage, so zombies can't attack them. When they die, they sometimes drop a Camouflage that will last for 10 seconds.
             <br>
             <br>Some Atlas Soldiers have Shields and a ohm. The rest just have an ohm. After round 20 a Goliath will start spawning everytime a gas bomb spawns.
+        </div>
+    </div>
+    <div ng-show="{{zombie.ZombieId==12}}">
+        <div class="game">
+            <div class="game-title">
+                <h1>Fused Zombies</h1>
+            </div>
+        </div>
+        <div class="description">
+            A Fused Zombie is two zombies in one. Blinker fused with a Spiker makes a purple looking zombie. Meatbags fused with EMZs, looks like a Meatbag but has electricity like a EMZ and others.  
+        </div>
+    </div>
+    <div ng-show="{{zombie.ZombieId==13}}">
+        <div class="game">
+            <div class="imageA">
+                <img src="img/Meatbag.png"/>
+            </div>
+            <div class="game-title">
+                <h1>Meatbags</h1>
+            </div>
+        </div>
+        <div class="description">
+            Meatbags are zombies that were Atlas Officers with tactical armor. They have more health because of the armor they have. Also they have high resistance against headshot, due to the helmet they are wearing. The helmet does come off after its been shot a few times.
         </div>
     </div>
 </div>

@@ -4,19 +4,17 @@
     window.agApp.controller('thatExoupgradeController', Controller);
 
 
-    function Controller(thatExoupgradeService, $stateParams, $scope) {
+    function Controller($stateParams, $scope) {
         var vm = this;
         vm.ExoupgradeId = $stateParams.ExoupgradeId;
-        vm.mapId = $stateParams.mapId;
-        vm.exoupgrade = [];
-
+        vm.mapId = $stateParams.mapId
         Activate();
 
         function Activate() {
             $scope.mapMenu.selectedScreen = 'Exo-Upgrades';
-            vm.exoupgrade = thatExoupgradeService.GetThatExo(vm.ExoupgradeId);
+            
         }
     }
 
-
+    
 })();

@@ -4,7 +4,7 @@
     window.agApp.controller('songsController', Controller);
 
 
-    function Controller(songsService, $scope, $stateParams) {
+    function Controller($scope, $stateParams) {
         var vm = this;
         vm.SongId = $stateParams.SongId;
         vm.songs = null;
@@ -12,10 +12,9 @@
         Activate();
 
         function Activate() {
-            vm.songs = songsService.GetSongs(vm.SongId);
-            $scope.mapMenu.selectedScreen = vm.songs.displayName;
+            $scope.mapMenu.selectedScreen = "Song";
         }
     }
 
-
+    
 })();

@@ -68,7 +68,7 @@
             ]
             }
             if (WeaponId == 3) {
-                return [
+                var weapons = [
                     {
                         weapontId: 13,
                         displayName: "Bulldog",
@@ -84,8 +84,16 @@
                     {
                         weapontId: 16,
                         displayName: "CEL-3 Cauterizer",
-                },
-            ]
+                }
+                ];
+                if (mapId == 5) {
+                    weapons.push({
+                        weapontId: 51,
+                        displayName: "Blunderbuss",
+                    });
+                }
+                return weapons;
+
             }
             if (WeaponId == 4) {
                 return [
@@ -116,12 +124,13 @@
                         displayName: "Magnetron",
                     });
                 }
-                if (mapId == 4) {
+                if (mapId == 4 || mapId == 5) {
                     weapons.push({
                         weapontId: 46,
                         displayName: "Ohm",
                     });
-                
+                }
+                if (mapId == 4) {
                     weapons.push({
                         weapontId: 48,
                         displayName: "LZ-52 Limbo",
@@ -165,10 +174,16 @@
                 },
 
             ];
-                if (mapId == 4) {
+                if (mapId == 4 || mapId == 5) {
                     weapons.push({
                         weapontId: 47,
                         displayName: "M1 irons",
+                    });
+                }
+                if (mapId == 5) {
+                    weapons.push({
+                        weapontId: 52,
+                        displayName: "KL03-Trident",
                     });
                 }
                 return weapons;

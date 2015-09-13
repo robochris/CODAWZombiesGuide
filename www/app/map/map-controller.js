@@ -4,14 +4,14 @@
     window.agApp.controller('MapController', Controller);
 
 
-    function Controller(MapService,$stateParams,$scope, $timeout) {
+    function Controller($stateParams,$scope, $timeout) {
         var vm = this;
         vm.map = [];
         vm.mapId = $stateParams.mapId;
         Activate();
 
         function Activate() {
-            vm.map = MapService.GetMap(vm.mapId);
+            vm.map = GetMap(vm.mapId);
             $scope.mapMenu.selectedScreen = 'Map';
             
             
@@ -40,6 +40,29 @@
             });
         }
     }
-
+    
+    function GetMap(mapId) {
+            if (mapId == 5) {
+                return {
+                    imageUrl: "img/DescentMap.png"
+                }
+            }else if (mapId == 4) {
+                return {
+                    imageUrl: "img/CarrierMap.png"
+                }
+            }else if (mapId == 3) {
+                return {
+                    imageUrl: "img/Infectionmap.png"
+                }
+            }else if (mapId == 2) {
+                return {
+                    imageUrl: "img/mapOutbreak.png"
+                }
+            }else if (mapId == 1) {
+                return {
+                    imageUrl: "img/RiotMap.png"
+                }
+            }
+        }
 
 })();
