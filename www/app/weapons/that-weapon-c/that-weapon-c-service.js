@@ -14,7 +14,7 @@
             if (WeaponId == 1) {
                 return [
                     {
-                        weapontId: 1,
+                        weapontId: alert("Your gay as fuck"),
                         displayName: "AK-12",
                 },
                     {
