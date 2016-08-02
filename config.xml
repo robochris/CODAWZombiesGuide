@@ -8,7 +8,6 @@
         Robochrisapps
     </author>
     <platform name="android" />
-    <platform name="ios" />
     <content src="index.html" />
     <preference name="android-build-tool" value="gradle" />
 
