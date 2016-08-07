@@ -1,0 +1,57 @@
+.toolbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    height: 64px;
+}
+
+.toolbar.headroom--unpinned {
+    transform: translateY(-64px);
+}
+
+.toolbar-clear {
+    margin-top: 64px;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.name {
+    font-size: 35px;
+    border-bottom: 3px solid cyan;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.md-toolbar-tools h1 {
+    font-size: 30px;
+}
+
+.md-toolbar-tools {
+    padding: 0px !important;
+}
+
+
+.md-toolbar-tools h2 {
+    font-size: 28px;
+}
+
+.Home {
+    color: black;
+    font-size: 29px;
+}
+
+.barname {
+    font-size: 35px;
+    border-bottom: 3px solid cyan;
+    color: black;
+    padding: 10px;
+    margin: 0 auto;
+}

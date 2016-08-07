@@ -1,0 +1,31 @@
+.description1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid cyan;
+    padding: 5px;
+}
+.HTG {
+    font-size: 25px;
+}
+.score p {
+    margin-left: 108px;
+}
+.game-title p {
+    font-size: 18px;
+    margin-left: 108px;
+}
+.game-title h1 {
+    font-size: 18px;
+    margin-left: 108px;
+}
+.image img {
+    width: 100px;   
+}
+.game {
+    border-bottom: 2px solid cyan;
+    padding-bottom: 2px;
+    min-height: 110px;
+}
+.game .image {
+    position: absolute;
+}

@@ -1,16 +1,15 @@
-<link rel="stylesheet" href="app/css/map-list.css">
-
+<link rel="stylesheet" href="app/map-list/map-list.css">
 <div class="maintitle">
     <md-toolbar>
         <div class="md-toolbar-tools">
-            <h1 style="margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto;">Advanced Warfare Zombies</h1>
+            <h1 style="font-size: 22px; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto;">Advanced Warfare Zombies</h1>
         </div>
     </md-toolbar>
 </div>
 <div ng-controller="MapListController as mapList">
     <div ng-repeat="map in mapList.maps" class="map" ui-sref="map-menu({mapId: map.mapId})">
         <div class="description">
-            <div class="name">{{map.displayName}}</div>
+            <div class="name" style="font-size: 30px; margin: 0 auto;">{{map.displayName}}</div>
         </div>
         <div class="mapimage">
             <img ng-src="{{map.imageUrl}}" />

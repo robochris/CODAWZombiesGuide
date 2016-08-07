@@ -1,14 +1,12 @@
-<link rel="stylesheet" href="app/css/feature.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link rel="stylesheet" href="app/features/feature.css">
 <div ng-controller="thatfeatureController as feature">
     <div ng-repeat="feature in feature.feature" class="weapon" ui-sref="trap({TrapId: feature.TrapId})">
         <div class="description">
-            <div class="name">{{feature.displayName}}</div>
+            <div class="name">feature.displayName</div>
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==1}}">
+    <div ng-show="feature.FeatureId==1">
         <div class="game">
             <div class="image">
                 <img src="img/Power.png">
@@ -26,13 +24,13 @@
             <br> Features Include:
             <br> -All Perks
                 -Exo suits
-            <div ng-show="{{feature.mapId==3 || feature.mapId==4}}">
+            <div ng-show="feature.mapId==3 || feature.mapId==4">
                 -Traps
             </div>
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==2}}">
+    <div ng-show="feature.FeatureId==2">
         <div class="game">
             <div class="image">
                 <img src="img/Upgrade.png" />
@@ -47,13 +45,13 @@
         <div class="description">
             Upgrades are permanent, meaning one can get rid of an upgraded gun and then buy it again off the wall or from the 3D Printer but without needing to start over with all the upgrades. Players can upgrade their weapons a maximum of 19 times per weapon up to Mk20. A secret experimental Upgrade Station can be unlocked by completing a certain part in the easter which will allow players to upgrade one more time to Mk25. Each time the player upgrades the gun, it will replenish ammo, gain a new skin, and get increased stats. In specific Mk levels, a new attachment may be added or maximum ammunition may be increased.
             <br>
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
                 There are three Upgrade Stations on Outbreak. The first two are located in the Morgue and in the Administration, and the last one is found in the Exo Testing room after completing "Game Over, Man".
             </div>
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==3}}">
+    <div ng-show="feature.FeatureId==3">
         <div class="game">
             <div class="image">
                 <img src="img/Orbital.png" />
@@ -64,7 +62,7 @@
         </div>
         <div class="description">
             Orbital Care Packages will randomly appear during rounds.
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
                 Most of them will land in the starting area, although some may appear in the Exo suits Room after it has been opened.
             </div>
             A player can stack a maximum of three Care Package items. It will contain the following items:
@@ -73,10 +71,10 @@
             <br> -A Aerial Assault Drone with the AI Control module and possibly the Rockets module.
             <br> -The Camouflage bonus.
             <br> -Credits. The amount of credits the player will gain will be randomized each time, ranging from 100 to 1000.
-            <div ng-show="{{feature.mapId==4}}">
+            <div ng-show="feature.mapId==4">
                 -Sentinel Reinforcements can defuse the bomb, revive players or kill zombies and atlas soldiers.
             </div>
-            <div ng-show="{{feature.mapId==5}}">
+            <div ng-show="feature.mapId==5">
                 -XS1 Goliath is a heavy armored suit with rockets and a machine gun. When it runs out of health you do not die.
             </div>
             <br>
@@ -84,7 +82,7 @@
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==4}}">
+    <div ng-show="feature.FeatureId==4">
         <div class="game">
             <div class="image">
                 <img src="img/cure.png" />
@@ -99,22 +97,22 @@
         <div class="description">
             During a Host wave; if the player is hit by a Host, they become "infected", and have a minute to be decontaminated, and every time the player is hit by a zombie while infected, the player will lose extra time from the counter. It will cleanse the player. It can also cleanse teammates while it is active. Upon being decontaminated, the player will gain invisibility from zombies for a few seconds. The device has a 10 second cool down time.
             <br>
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
                 Located in the Administration room
             </div>
-            <div ng-show="{{feature.mapId==3}}">
+            <div ng-show="feature.mapId==3">
                 Located in The Pit
             </div>
-            <div ng-show="{{feature.mapId==4}}">
+            <div ng-show="feature.mapId==4">
                 Located in the Med bay and Moon Pool.
             </div>
-            <div ng-show="{{feature.mapId==5}}">
+            <div ng-show="feature.mapId==5">
                 Located in the Spa
             </div>
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==5}}">
+    <div ng-show="feature.FeatureId==5">
         <div class="game">
             <div class="image">
                 <img src="img/Printer.png" />
@@ -131,7 +129,7 @@
             <br>
             <br> The 3D Printer visibly cycles through different weapons when idling, and upon purchase, the weapon currently on display becomes printed. This means the player can actually influence what weapon they receive. A bad thing is, the weapons switch very quickly making it difficult to receive ones desired weapon. The 3D Printer, if used enough times, will eventually malfunction, and another 3D Printer in another location will be activated.
             <br>
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
                 Locations Are:
                 <br> -Main Hub: In the central booth
                 <br> -Holding: On a room to the left when entering the Holding from the Main Hub
@@ -139,7 +137,7 @@
                 <br> -Morgue: Below the staircase leading towards the Exo Testing room
                 <br> -Exo Testing room: Next to the staircase from the Morgue
             </div>
-            <div ng-show="{{feature.mapId==3}}">
+            <div ng-show="feature.mapId==3">
                 Locations are:
                 <br>The Pit: Next to the Decontamination Zone.
                 <br>Atlas Command: In the far left building in the center (default location).
@@ -152,7 +150,7 @@
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==6}}">
+    <div ng-show="feature.FeatureId==6">
         <div class="game">
             <div class="image">
                 <img src="img/Trash.png" />
@@ -169,7 +167,7 @@
         <div class="description">
             Trash Chute will take any player who uses the chute. It can take you to areas depending on how and where the chute is used.
             <br>
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
              Trash Chute Location:
             <br> -be hide upgrade station in the Administration room.
             <br> -On the right when entering the Exo Room from the Morgue Door
@@ -179,20 +177,20 @@
             <br> -Right by Exo Medic
             <br> -Incinerator Room
             </div>
-            <div ng-show="{{feature.mapId==3}}">
+            <div ng-show="feature.mapId==3">
             Trash Chute Locations:
                 <br>On the side of Burger Town closest to bubby.
             </div>
             <br> They cost 100 credits to be used - the first time in a round. The cost goes up to 500 for the next use (In the same round.) and then increasing by increments of 500 every use until maxing out at 2,000. The price for the using the Chute is reset after every round.
             <br>
             <br> Zombies cannot follow the players in the chute, making it a good way to escape quickly. 
-            <div ng-show="{{feature.mapId==2}}">
+            <div ng-show="feature.mapId==2">
             The Trash Chute can also be used to acquire Decker's security card.
             </div>
         </div>
     </div>
 
-    <div ng-show="{{feature.FeatureId==7}}">
+    <div ng-show="feature.FeatureId==7">
         <div class="game">
             <div class="imageA">
                 <img src="img/ATM.png" />
@@ -210,7 +208,7 @@
             <br> *Note* When multiplier is on, the ATM will give you 200 credits.
         </div>
     </div>
-    <div ng-show="{{feature.FeatureId==9}}">
+    <div ng-show="feature.FeatureId==9">
         <div class="game">
             <div class="imageA">
                 <img src="img/Desposal.png" />
@@ -225,7 +223,7 @@
             <br>Grenade Disposal is loacted in the Armory
         </div>
     </div>
-    <div ng-show="{{feature.FeatureId==10}}">
+    <div ng-show="feature.FeatureId==10">
         <div class="game">
             <div class="imageA">
                 <img src="img/Weapon.png" />
@@ -251,7 +249,7 @@
             <br>To turn on the machine, you have to do step -- in the easter egg
         </div>
     </div>
-    <div ng-show="{{feature.FeatureId==11}}">
+    <div ng-show="feature.FeatureId==11">
         <div class="game">
             <div class="image">
                 <img src="img/Fishpole.png" />
@@ -275,7 +273,7 @@
             <br>-Credits
         </div>
     </div>
-    <div ng-show="{{feature.FeatureId==12}}">
+    <div ng-show="feature.FeatureId==12">
         <div class="game">
             <div class="imageA">
                 <img src="img/Teleporter.png"/>
@@ -291,7 +289,7 @@
             The Teleporter will teleport the player to different locations.
         </div>
     </div>
-    <div ng-show="{{feature.FeatureId==13}}">
+    <div ng-show="feature.FeatureId==13">
         <div class="game">
             <div class="image">
                 <img src="img/Chompy.png"/>

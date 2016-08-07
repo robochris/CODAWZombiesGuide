@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.robochris.AWZombiesGuide" version="2.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Advanced Warfare Zombies</name>
+<widget id="com.robochris.AWZombiesGuide" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Advanced Warfare Zombies Guide</name>
     <description>
         DAT APP
     </description>
@@ -9,9 +9,9 @@
     </author>
     <platform name="android" />
     <content src="index.html" />
+    
+    <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="android-build-tool" value="gradle" />
-
-    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="handset" />
@@ -29,24 +29,18 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#184895" />
     <preference name="StatusBarStyle" value="lightcontent" />
-
-    <gap:plugin name="org.apache.cordova.camera" source="npm" />
+    
     <gap:plugin name="org.apache.cordova.console" source="npm" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
-    <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-admob" source="npm" version="4.1.6" />
-    <plugin name="com.ionic.keyboard" spec="1.0.3" source="pgb" />
-    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
-
+    
     <icon src="icon.png" />
-
+    
     <icon gap:platform="android" src="res/icon/android/icon36.png" gap:qualifier="ldpi" />
     <icon gap:platform="android" src="res/icon/android/icon48.png" gap:qualifier="mdpi" />
     <icon gap:platform="android" src="res/icon/android/icon72.png" gap:qualifier="hdpi" />
     <icon gap:platform="android" src="res/icon/android/icon96.png" gap:qualifier="xhdpi" />
-
+    
     <access origin="*" />
     <engine name="android" spec="~4.1.1" />
 </widget>
-

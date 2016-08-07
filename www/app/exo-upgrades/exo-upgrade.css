@@ -1,0 +1,26 @@
+.description {
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.cost   {
+    font-size: 18px;
+    margin-left: 47%;
+    
+}
+.game-title h1 {
+    font-size: 18px;
+    margin-left: 45%;
+    border-bottom: 2px solid grey;
+    text-align: center;
+}
+.image img {
+    width: 175px;
+    height: 125px;
+    position: absolute;
+}
+.game {
+    border-bottom: 2px solid cyan;
+    padding-bottom: 50px;
+    min-height: 110px;  
+}

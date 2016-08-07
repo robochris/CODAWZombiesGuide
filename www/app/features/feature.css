@@ -1,0 +1,47 @@
+.description {
+    font-size: 25px;
+    padding: 5px;
+}
+.cost   {
+    font-size: 18px;
+    margin-left: 200px;
+}
+.credits   {
+    font-size: 18px;
+    margin-left: 200px;
+}
+.game-title h1 {
+    font-size: 18px;
+    margin-left: 200px;
+    padding-top: 5px;
+    border-bottom: 5px solid grey;
+}
+.image img {
+    width: 175px;
+    height: 150px
+}
+.game {
+    border-bottom: 2px solid cyan;
+    padding-bottom: 100px;
+    min-height: 110px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+.game .image {
+    position: absolute;
+    margin: 5px;
+    box-shadow: 2px 2px 1px #080808;
+}
+.game .imageA {
+    position: absolute;
+}
+.imageA img {
+    width: 175px;
+    height: 205px
+}
+
+/*Feature 2*/
+.info {
+    font-size: 18px;
+    margin-left: 200px;
+}

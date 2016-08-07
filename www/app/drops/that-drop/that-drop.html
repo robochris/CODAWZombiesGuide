@@ -1,13 +1,11 @@
-<link rel="stylesheet" href="app/css/power-up.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link rel="stylesheet" href="app/drops/drop.css">
 <div ng-controller="thatDropController as drop">
-    <div ng-show="{{drop.DropId==1}}">
+    <div ng-show="drop.DropId==1">
         <div class="game">
-            <div class="image">
+            <div class="imageA">
                 <img src="img/Resupply.png" />
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Resupply</h1>
             </div>
         </div>
@@ -16,7 +14,7 @@
         </div>
     </div>
     
-    <div ng-show="{{drop.DropId==2}}">
+    <div ng-show="drop.DropId==2">
         <div class="game">
             <div class="image">
                 <img src="img/DNABomb.png" />
@@ -30,12 +28,12 @@
         </div>
     </div>
     
-    <div ng-show="{{drop.DropId==3}}">
+    <div ng-show="drop.DropId==3">
         <div class="game">
-            <div class="image">
+            <div class="imageA">
                 <img src="img/Hyper.png" />
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Hyper Damage</h1>
             </div>
         </div>
@@ -44,7 +42,7 @@
         </div>
     </div>
     
-    <div ng-show="{{drop.DropId==4}}">
+    <div ng-show="drop.DropId==4">
         <div class="game">
             <div class="image">
                 <img src="img/Multiplier.png" />
@@ -61,7 +59,7 @@
         </div>
     </div>
     
-    <div ng-show="{{drop.DropId==5}}">
+    <div ng-show="drop.DropId==5">
         <div class="game">
             <div class="image">
                 <img src="img/Security.png" />
@@ -81,7 +79,7 @@
         </div>
     </div>
     
-    <div ng-show="{{drop.DropId==6}}">
+    <div ng-show="drop.DropId==6">
         <div class="game">
             <div class="image">
                 <img src="img/Full.png" />
@@ -99,12 +97,12 @@
             The Power Up will drop at the end of every Infected round or Dog round.
         </div>
     </div>
-    <div ng-show="{{drop.DropId==7}}">
+    <div ng-show="drop.DropId==7">
         <div class="game">
-            <div class="image">
+            <div class="imageA">
                 <img src="img/Surge.png"/>
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Power Surge</h1>
             </div>
         </div>
@@ -112,7 +110,7 @@
             Dropped by zombies. When activated, all the 3D Printers will be turned on and will also cost 10 Credits.
         </div>
     </div>
-    <div ng-show="{{drop.DropId==8}}">
+    <div ng-show="drop.DropId==8">
         <div class="game">
             <div class="image">
                 <img src="img/Explosive.png"/>
@@ -125,7 +123,7 @@
             When Explosive Touch is activated floating balls will start moving around the player, killing every enemy that touches the player.
         </div>
     </div>
-    <div ng-show="{{drop.DropId==9}}">
+    <div ng-show="drop.DropId==9">
         <div class="game">
             <div class="image">
                 <img src="img/OpenFire.png"/>

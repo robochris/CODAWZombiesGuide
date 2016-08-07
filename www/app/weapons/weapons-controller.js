@@ -4,7 +4,7 @@
     window.agApp.controller('weaponsController', Controller);
 
 
-    function Controller(weaponsService, $stateParams, $scope, thatWeaponCService) {
+    function Controller(weaponsService, $stateParams, $scope, thatWeaponService) {
         var vm = this;
         vm.weapon = [];
         vm.weapons = [];
@@ -20,7 +20,7 @@
             
             if (vm.mapId == 1) {
                 // get riot weapons
-                vm.weapons = thatWeaponCService.GetThatWeaponL(12);
+                vm.weapons = thatWeaponService.GetThatWeaponL(12);
             }
         }
     }

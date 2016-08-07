@@ -1,11 +1,9 @@
-<link rel="stylesheet" href="app/css/acheivement.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="app/achievements/acheivement.css">
 
 <div ng-controller="achievementsController as achievements">
     <div ng-repeat="achievement in achievements.achievements" class="achievement" ui-sref="achievement({AchievementId: achievement.AchievementId})">
         <div class="description">
             <div class="name">{{achievement.displayName}}</div>
-            Test
         </div>
     </div>
 </div>

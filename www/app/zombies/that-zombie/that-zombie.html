@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="app/css/zombie.css">
+<link rel="stylesheet" href="app/zombies/zombies.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 <div ng-controller="thatzombieController as zombie">
-    <div ng-show="{{zombie.ZombieId==1}}">
+    <div ng-show="zombie.ZombieId==1">
         <div class="game">
             <div class="image">
                 <img src="img/RegZob.png" />
@@ -19,13 +19,13 @@
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==2}}">
+    <div ng-show="zombie.ZombieId==2">
         <div class="game">
             <div class="imageA">
                 <img src="img/host.png">
             </div>
 
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Hosts</h1>
             </div>
         </div>
@@ -37,13 +37,13 @@
             <br> Once the last zombie of the Hosts round is killed, it will drop a Full Reload power-up, and any infected player will be cured without needing to go to the Decontamination Zone. When the player kills a Host, it will explode and leak out green fluid.
             <br>
             <br>
-            <div ng-show="{{zombie.mapId==2}}">
+            <div ng-show="zombie.mapId==2">
                 When it is a Host round, Angie will give the player(s) a warning over the intercom. "Attention, Security has been breached" signifying the Hosts are coming.
             </div>
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==3}}">
+    <div ng-show="zombie.ZombieId==3">
         <div class="game">
             <div class="image">
                 <img src="img/dog.png" />
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==4}}">
+    <div ng-show="zombie.ZombieId==4">
         <div class="game">
             <div class="image">
                 <img src="img/Charger.png" />
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==5}}">
+    <div ng-show="zombie.ZombieId==5">
         <div class="game">
             <div class="image">
                 <img src="img/EMZ.png" />
@@ -96,7 +96,7 @@
     </div>
 
 
-    <div ng-show="{{zombie.ZombieId==6}}">
+    <div ng-show="zombie.ZombieId==6">
         <div class="game">
             <div class="image">
                 <img src="img/exploder.png" />
@@ -112,7 +112,7 @@
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==7}}">
+    <div ng-show="zombie.ZombieId==7">
         <div class="game">
             <div class="image">
                 <img src="img/Spiker.png" />
@@ -132,7 +132,7 @@
         </div>
     </div>
 
-    <div ng-show="{{zombie.ZombieId==8}}">
+    <div ng-show="zombie.ZombieId==8">
         <div class="game">
             <div class="image">
                 <img src="img/Acid.png" />
@@ -149,7 +149,7 @@
             <br> So its recommended to kill them as soon as the spawn because the longer they live the more puddles of acid there will be.
         </div>
     </div>
-    <div ng-show="{{zombie.ZombieId==9}}">
+    <div ng-show="zombie.ZombieId==9">
         <div class="game">
             <div class="image">
                 <img src="img/goliath.png" />
@@ -166,12 +166,12 @@
             <br>The Goliath is extremely dangerous when faced alone or with another companion, since only two hits will be enough to kill a player. Fighting the zombie with multiple teammates is the best option to quickly take it down. It can activate an EMP when approached, which will shut the player's exo down. It can fire heat-seeking missiles that will cause an EMP when detonated as well.
         </div>
     </div>
-    <div ng-show="{{zombie.ZombieId==10}}">
+    <div ng-show="zombie.ZombieId==10">
         <div class="game">
             <div class="imageA">
                 <img src="img/Teleport.png" />
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Blinkers</h1>
             </div>
         </div>
@@ -183,12 +183,12 @@
             <br>The Teleporting Zombies are used for the easter egg to collect the teleport grenade like things.
         </div>
     </div>
-    <div ng-show="{{zombie.ZombieId==11}}">
+    <div ng-show="zombie.ZombieId==11">
         <div class="game">
             <div class="imageA">
                 <img src="img/Atlas.png" />
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Atlas Strike Team</h1>
             </div>
         </div>
@@ -200,7 +200,7 @@
             <br>Some Atlas Soldiers have Shields and a ohm. The rest just have an ohm. After round 20 a Goliath will start spawning everytime a gas bomb spawns.
         </div>
     </div>
-    <div ng-show="{{zombie.ZombieId==12}}">
+    <div ng-show="zombie.ZombieId==12">
         <div class="game">
             <div class="game-title">
                 <h1>Fused Zombies</h1>
@@ -210,12 +210,12 @@
             A Fused Zombie is two zombies in one. Blinker fused with a Spiker makes a purple looking zombie. Meatbags fused with EMZs, looks like a Meatbag but has electricity like a EMZ and others.  
         </div>
     </div>
-    <div ng-show="{{zombie.ZombieId==13}}">
+    <div ng-show="zombie.ZombieId==13">
         <div class="game">
             <div class="imageA">
                 <img src="img/Meatbag.png"/>
             </div>
-            <div class="game-title">
+            <div class="game-titleA">
                 <h1>Meatbags</h1>
             </div>
         </div>

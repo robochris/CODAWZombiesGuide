@@ -1,8 +1,6 @@
-<link rel="stylesheet" href="app/css/exo.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link rel="stylesheet" href="app/exo-upgrades/exo-upgrade.css">
 <div ng-controller="thatExoupgradeController as Exo">
-    <div ng-show="{{Exo.ExoupgradeId==1}}">
+    <div ng-show="Exo.ExoupgradeId==1">
         <div class="game">
             <div class="image">
                 <img src="img/Soldier.png" />
@@ -18,22 +16,22 @@
             Exo Soldier allows the player to shoot and reload while sprinting and sliding. It also increases weapon swap speed and hip fire accuracy. Exo Soldier is particularly useful in higher rounds, as it allows the player to reload while sprinting, which is useful when being chased by a massive horde of zombies.
             <br>
             <br>
-            <div ng-show="{{Exo.mapId == 2}}">
+            <div ng-show="Exo.mapId == 2">
             On Outbreak, this upgrade is located in the Holding Room
             </div>
-            <div ng-show="{{Exo.mapId == 3}}">
+            <div ng-show="Exo.mapId == 3">
             On Infection, this upgrade is located in the Value Voltage
             </div>
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in the Armory
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Lounge.
             </div>
         </div>
     </div>
     
-    <div ng-show="{{Exo.ExoupgradeId==2}}">
+    <div ng-show="Exo.ExoupgradeId==2">
         <div class="game">
             <div class="image">
                 <img src="img/Health.png" />
@@ -49,22 +47,22 @@
             Exo Health increases the player's health. Which allows the player to take seven hits before being downed
             <br>
             <br>
-            <div ng-show="{{Exo.mapId == 2}}">
+            <div ng-show="Exo.mapId == 2">
             On Outbreak, this upgrade is located in Holding Room.
             </div>
-            <div ng-show="{{Exo.mapId == 3}}">
+            <div ng-show="Exo.mapId == 3">
             On Infection, this upgrade is located in the Burger Town
             </div>
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in the Moon Pool
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Tidal Generator.
             </div>
         </div>
     </div>
     
-    <div ng-show="{{Exo.ExoupgradeId==3}}">
+    <div ng-show="Exo.ExoupgradeId==3">
         <div class="game">
             <div class="image">
                 <img src="img/Reload.png" />
@@ -80,22 +78,22 @@
             Exo Reloads effect is most useful and noticeable on weapons with slow reload times, such as light machine guns and shotguns, but due to its high cost, it is ill-advised to purchase without Exo Health unless you really need it need.
             <br>
             <br>
-            <div ng-show="{{Exo.mapId == 2}}">
+            <div ng-show="Exo.mapId == 2">
             On Outbreak, this upgrade is located in the Morgue.
             </div>
-            <div ng-show="{{Exo.mapId == 3}}">
+            <div ng-show="Exo.mapId == 3">
             On Infection, this upgrade is located in the Sewers
             </div>
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in the Lift
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Annex.
             </div>
         </div>
     </div>
     
-    <div ng-show="{{Exo.ExoupgradeId==4}}">
+    <div ng-show="Exo.ExoupgradeId==4">
         <div class="game">
             <div class="image">
                 <img src="img/Slam.png" />
@@ -114,22 +112,22 @@
             To use, double jump then press B.
             <br>
             <br>
-            <div ng-show="{{Exo.mapId == 2}}">
+            <div ng-show="Exo.mapId == 2">
             In Outbreak, this upgrade is located in the Main Hub.
             </div>
-            <div ng-show="{{Exo.mapId == 3}}">
+            <div ng-show="Exo.mapId == 3">
             On Infection, this upgrade is located in the Atlas Command
             </div>
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in the Bio Lab
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Galleria.
             </div>
         </div>
     </div>
     
-    <div ng-show="{{Exo.ExoupgradeId==5}}">
+    <div ng-show="Exo.ExoupgradeId==5">
         <div class="game">
             <div class="image">
                 <img src="img/Medic.png" />
@@ -149,22 +147,22 @@
             <br>
              When the player is downed, they will be equipped with their handgun (Atlas 45 if the player doesn't have one) while they are down and will be revived shortly after. The zombies will move away from the player while they are being revived. It can be bought only three times before becoming unavailable for the rest of the game.
             If the player has a different pistol or the CEL-3 Cauterizer, they will use that when they are down. 
-            <div ng-show="{{Exo.mapId == 2}}">
+            <div ng-show="Exo.mapId == 2">
             In Outbreak, this upgrade is located in the Main Hub.
             </div>
-            <div ng-show="{{Exo.mapId == 3}}">
+            <div ng-show="Exo.mapId == 3">
             On Infection, this upgrade is located in the Atlas Command
             </div>
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in the Gun Deck/Hangar
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Landing.
             </div>
         </div>
     </div>
     
-    <div ng-show="{{Exo.ExoupgradeId==6}}">
+    <div ng-show="Exo.ExoupgradeId==6">
         <div class="game">
             <div class="image">
                 <img src="img/Stockpile.png" />
@@ -180,10 +178,10 @@
             Exo Stockpile increases the amount of ammo or grenades you can have. The ammo increases by 20% and grenades increases by one Grenade.
             <br>
             <br> It also increases the amount of grenades received per round.
-            <div ng-show="{{Exo.mapId == 4}}">
+            <div ng-show="Exo.mapId == 4">
             On Carrier, this upgrade is located in Med Bay.
             </div>
-            <div ng-show="{{Exo.mapId == 5}}">
+            <div ng-show="Exo.mapId == 5">
             On Descent, this upgrade is located in Great Hall.
             </div>
         </div>

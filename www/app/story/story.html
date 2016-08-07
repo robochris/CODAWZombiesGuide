@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="app/css/story.css">
+<link rel="stylesheet" href="app/story/story.css">
 
 <div ng-controller="storyController as story">
-    <div ng-show="{{story.StoryId==1}}">
+    <div ng-show="story.StoryId==1">
         <div class="storys">
             The Atlas Corporation sent in three platoons to contain the infected; two of them returned in body bags. Unbeknownst to any employees' knowledge, several zombies were contained and taken in secret to an Atlas research lab for further studies. The zombies were hidden away in the secret Sublevel 6 of the facility. However, the zombies escaped containment, and a massive outbreak ravaged the facility before anyone knew what was happening. Only four Atlas employees - Oz the maintenance worker/janitor, Lilith the I.T. specialist, Decker the security guard, and Kahn the executive - remained.
             <br>
@@ -9,45 +9,30 @@
             <br>
             <br> After deciding that the Atlas Corporation isn't going to send anyone for them (although they curiously seem to silently watch from afar and send assistance via Orbital Drops), the four attempt to send out their own rescue signal. While attempting to gain clearance to surpass the security system via Angie's instructions, it becomes increasingly apparent to the survivors that someone has set them up and is testing them to see if they can escape. When the security is finally bypassed, a prerecorded voice message tells the survivors that they have passed Stage One, and have twenty four hours to reach the rendezvous point for Stage Two. A rescue signal is sent out, and a new Warbird is called in. However, as the new Warbird approaches the facility, it is shot down by a missile, leaving the four survivors stranded once again.
         </div>
-        <div class="howto">
-            <iframe width="360" height="315" src="https://www.youtube.com/embed/dvBK3IWkYyM" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div>
 
-    <div ng-show="{{story.StoryId==2}}">
+    <div ng-show="story.StoryId==2">
         <div class="storys">
             Four Atlas soldiers are sent in to contain a prison riot that had escalated into a full-out war. However, in the midst of the battle, the Atlas Corporation deployed massive amounts of the Manticore bio-weapon, intending to end the battle. Instead, the deceased rioters reanimated into mindless creatures, and attacked the soldiers. Gideon arrives in a Warbird to rescue the stranded soldiers; however, the Warbird is overrun by zombies, and Gideon is presumably killed by the horde.
         </div>
-        <div class="howto">
-            <iframe width="360" height="315" src="https://www.youtube.com/embed/xGVxcwdqqAg" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div>
 
-    <div ng-show="{{story.StoryId==3}}">
+    <div ng-show="story.StoryId==3">
         <div class="storys">
             With the infection now across the entire facility and with no hopes of escape, the four survivors are eventually swarmed, but by luck, an Atlas VTOL arrives in the nick of time and saves them. Atlas scientists then put them in the back of four Atlas trucks, where the four survivors are then brought to a nearby Burger Town where the infection has spread to. Having recovered from their previous battle, the survivors are now tasked with rescuing civilians trapped within the vicinity of Burger Town, as well as clearing up the zombie horde infesting the area. They discover that the Burger Town mascot, Bubby, is actually a highly sophisticated robot. They then attempt to activate it, which either results in Bubby coming to life and aiding them in battle, or simply exploding. While doing this, they also discover a secret missile launch station inside Burger Town, and in the process of trying to activate Bubby, launch a missile into the air. Eventually, Sentinel forces arrive and clean up the last of the undead, but then hold the survivors at gunpoint. Their leader, who claims to have been watching them for a long time, declares that one of them "has to go".
         </div>
-        <div class="howto">
-            <iframe width="360" height="315" src="https://www.youtube.com/embed/EDIQLa_O2dw" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div>
-    <div ng-show="{{story.StoryId==4}}">
+    <div ng-show="story.StoryId==4">
         <div class="storys">
             After the group obeys Eagle One's commands to rescue several dozen survivors, Sentinel Forces arrive and clean up the last of the undead, but hold the survivors at gunpoint. Lennox, the Warbird operator and also the leader of Sentinel, claiming to have been watching them for a long time, declares that one of them "has to go." Oz is then executed by Lennox, claiming that he is the source of the infection. Kahn denies this, but Lennox explains to them that they once were dead before having them sedated. Just before Lilith was sedated, a group of zombies break through the Sentinels, forcing Lennox to fight back. After killing the zombies, Lilith is sedated when the Sentinels gain word that Atlas is five miles out, much to Lennox's dismay, claiming that they're "early". After loading the four up, Atlas begins chasing the Sentinels to a secret aircraft carrier. However, Oz's body then reanimates inside a Sentinel Razorback, bringing Oz back to life, but now zombified.
             <br>
             <br> Upon arriving on the ship, Lennox, Kahn, Lilith and Decker fend off against the undead forces, as well as Atlas Strike Teams who attempt to plant Gas Bombs and contaminate the ship. While fighting, they discover several diagrams depicting Oz as "Patient Zero", hinting at a possibility of Oz having been experimented on by the Atlas Corporation in the past. It is also revealed that Oz was a Sentinel operative in the past, as well as the fact Oz was thought to be zombified during the manticore outbreak, further prompting the question of whether Atlas made Oz human again. Eventually, they find a vault door, which leads into the captain's deck, where they can set the ship to self-destruct. However, the door is locked, and requires four data tablets containing the captain's logs. After finding all four tablets, and learning the story behind the ship, the group enters the vault, and proceeds to rig the ship. After Lilith succeeds in doing so, the group then heads toward an emergency pod for extraction. As they prepare to escape, however, they discover Oz, who has fully reanimated as a zombie (again?), while somehow still able to call out to Lilith for help. </div>
-        <div class="howto">
-            <iframe width="360" height="315" src="https://www.youtube.com/embed/YbDnaXCyoUU" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div>
-    <div ng-show="{{story.StoryId==5}}">
+    <div ng-show="story.StoryId==5">
         <div class="storys">
             Eventually, they find a vault door, which leads into the engine room, where they can set the ship to self-destruct. However, the door is locked, and requires four data tablets containing the access codes. The group then finds four data tablets, and learns through "Oz" the story of the ship's former captain, DJ, who went missing after refusing to give the access codes of the ship to the crew members. The group enters the engine room, and proceeds to rig the ship. After Lilith succeeds in doing so, the group then heads toward an emergency pod for extraction. As they prepare to escape, however, they discover Oz, who has fully reanimated as a zombie, while somehow still able to call out to Lilith for help. The floor below Oz explodes, and he falls through the floor. The crew then rushes and gets in an escape pod, then talks about their next plan: to kill Oz. The crew then go to Atlas' underwater city, The Trident Retreat.
             <br>
             <br> Upon landing, the crew then guns down a few Atlas soldiers guarding The Trident Retreat. The crew then enters The Trident Retreat and hears Oz call out to them. He then teleports them and begins to laugh, taunting them and threatening them with traps and hazards. He starts to hit buttons to test them out, and accidentally hits a button that teleports the crew out. Later, Oz then teleports them again and uses the traps and hazards on the crew. The crew eventually defeats Oz and they get teleported out. Later, Oz then speaks to them again, this time in a much deeper voice. The crew then gets teleported again and this time encounters a huge, mutated, fused Oz. The crew then successfully kills Oz, and then Lilith burns his corpse, not knowing that under the crew are hundreds of clones of Oz.
-        </div>
-        <div class="howto">
-            <iframe width="360" height="315" src="https://www.youtube.com/embed/QOeYARxj_pY" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>

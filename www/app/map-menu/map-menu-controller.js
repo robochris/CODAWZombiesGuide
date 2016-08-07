@@ -48,7 +48,7 @@
                     }, {
                         menuId: 3,
                         displayName: "Weapons",
-                        route: "weapons",
+                        route: "weapon-category",
                     }, {
                         menuId: 4,
                         displayName: "Exo-Upgrades",
@@ -109,7 +109,7 @@
                     }, {
                         menuId: 3,
                         displayName: "Weapons",
-                        route: "weapons",
+                        route: "weapon-category",
                     }, {
                         menuId: 4,
                         displayName: "Exo-Upgrades",
@@ -166,7 +166,7 @@
                     }, {
                         menuId: 3,
                         displayName: "Weapons",
-                        route: "weapons",
+                        route: "weapon-category",
                     }, {
                         menuId: 4,
                         displayName: "Exo-Upgrades",
@@ -224,7 +224,7 @@
                     }, {
                         menuId: 3,
                         displayName: "Weapons",
-                        route: "weapons",
+                        route: "weapon-category",
                     }, {
                         menuId: 4,
                         displayName: "Exo-Upgrades",
@@ -283,7 +283,7 @@
                     {
                         menuId: 2,
                         displayName: "Weapons",
-                        route: "weapons",
+                        route: "weapon-category",
                         },
                     {
                         menuId: 1,
@@ -295,8 +295,6 @@
                         displayName: "Story",
                         route: "storys({StoryId: 2})",
                         },
-
-
                 ]
 
             }

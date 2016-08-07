@@ -1,0 +1,7 @@
+<div ng-controller="thatWeaponController as weapons">
+    <div ng-repeat="weapon in weapons.weapons" class="weapon" ui-sref="weapon({weapontId: weapon.weapontId})">
+        <div class="description">
+            <div class="name">{{weapon.displayName}}</div>
+        </div>
+    </div>
+</div>

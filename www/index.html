@@ -2,64 +2,59 @@
 <html ng-app="agApp">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/angular-material/angular-material.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>CODAW Zombie Guide</title>
+    
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 </head>
 
 <body onload="onLoad()">
     <div ui-view></div>
     
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/jquery.panzoom/dist/jquery.panzoom.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery.panzoom/dist/jquery.panzoom.min.js"></script>
 
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular-ui-router/angular-ui-router.js"></script>
-    <script src="lib/angular-animate/angular-animate.js"></script>
-    <script src="lib/angular-aria/angular-aria.js"></script>
-    <script src="lib/angular-material/angular-material.js"></script>
-    <script src="lib/headroom/headroom.js"></script>
-    <script src="lib/headroom/angular.headroom.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/headroom.js/dist/headroom.min.js"></script>
+    <script src="bower_components/headroom.js/dist/angular.headroom.min.js"></script>
 
     <script src="app/app.js"></script>
-    <script src="app/map-menu/map-menu-controller.js"></script>
-    
+    <script src="app/achievements/achievements-controller.js"></script>
+    <script src="app/achievements/that-achievement/that-achievement-controller.js"></script>
+    <script src="app/character/characters-controller.js"></script>
+    <script src="app/character/that-character/that-character-controller.js"></script>
+    <script src="app/drops/drops-controller.js"></script>
+    <script src="app/drops/that-drop/that-drop-controller.js"></script>
+    <script src="app/easter-eggs/easter-eggs-controller.js"></script>
+    <script src="app/exo-upgrades/exo-upgrade-controller.js"></script>
+    <script src="app/exo-upgrades/that-exo-upgrade/that-exoupgrade-controller.js"></script>
+    <script src="app/features/features-controller.js"></script>
+    <script src="app/features/that-feature/that-feature-controller.js"></script>
+    <script src="app/features/that-feature/feature/feature-contoller.js"></script>
+    <script src="app/map/map-controller.js"></script>
     <script src="app/map-list/map-list-controller.js"></script>
     <script src="app/map-list/map-list-service.js"></script>
-    
-    <script src="app/map/map-controller.js"></script>
-    <script src="app/zombies/zombies-controller.js"></script>
-    
-    <script src="app/weapons/weapons-controller.js"></script>
-    <script src="app/weapons/weapons-service.js"></script>
-    
-    <script src="app/song/song-controller.js"></script>
-    <script src="app/character/characters-controller.js"></script>
-    <script src="app/drops/drops-controller.js"></script>
-    <script src="app/features/features-controller.js"></script>
-    <script src="app/exo-upgrades/exo-upgrade-controller.js"></script>
-    <script src="app/achievements/achievements-controller.js"></script>
-    <script src="app/story/story-controller.js"></script>
-    <script src="app/character/that-character/that-character-controller.js"></script>
-    <script src="app/achievements/that-achievement/that-achievement-controller.js"></script>
-    <script src="app/drops/that-drop/that-drop-controller.js"></script>
-    <script src="app/exo-upgrades/that-exo-upgrade/that-exoupgrade-controller.js"></script>
-    <script src="app/features/that-feature/that-feature-controller.js"></script>
-    
-    <script src="app/weapons/that-weapon-c/that-weapon-c-contoller.js"></script>
-    <script src="app/weapons/that-weapon-c/that-weapon-c-service.js"></script>
-    
-    <script src="app/zombies/that-zombie/that-zombie-controller.js"></script>
-    <script src="app/easter-eggs/easter-eggs-controller.js"></script>
-    
-    <script src="app/weapons/that-weapon-c/weapon/weapon-controller.js"></script>
+    <script src="app/map-menu/map-menu-controller.js"></script>
     <script src="app/oz-room/oz-room-controller.js"></script>
+    <script src="app/song/song-controller.js"></script>
+    <script src="app/story/story-controller.js"></script>
     <script src="app/strategy/strategy-controller.js"></script>
     <script src="app/tips/tips-contoller.js"></script>
-    <script src="app/features/that-feature/feature/feature-contoller.js"></script>
+    <script src="app/weapons/weapons-controller.js"></script>
+    <script src="app/weapons/weapons-service.js"></script>
+    <script src="app/weapons/that-weapon/that-weapon-contoller.js"></script>
+    <script src="app/weapons/that-weapon/that-weapon-service.js"></script>
+    <script src="app/weapons/that-weapon/weapon/weapon-controller.js"></script>
+    <script src="app/zombies/zombies-controller.js"></script>
+    <script src="app/zombies/that-zombie/that-zombie-controller.js"></script>
     <script>
         function onLoad() {
             if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {

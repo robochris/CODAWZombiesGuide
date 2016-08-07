@@ -74,7 +74,7 @@
                 }, {
                     ZombieId: 11,
                     displayName: "Atlas strike team",
-                },,{
+                }, {
                     ZombieId: 13,
                     displayName: "Meatbags",
                 }
@@ -106,7 +106,7 @@
                 }, {
                     ZombieId: 9,
                     displayName: "Goliath Zombie",
-                },{
+                }, {
                     ZombieId: 13,
                     displayName: "Meatbags",
                 }
